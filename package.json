@@ -1,0 +1,27 @@
+{
+  "name": "storybook-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-aws-s3  --bucket-path=14-all-button-styles-storybook/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.10",
+    "@storybook/addon-essentials": "^6.4.10",
+    "@storybook/addon-links": "^6.4.10",
+    "@storybook/api": "^6.4.19",
+    "@storybook/html": "^6.4.10",
+    "@storybook/storybook-deployer": "^2.8.10",
+    "babel-loader": "^8.2.3"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
