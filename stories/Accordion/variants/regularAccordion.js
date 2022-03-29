@@ -137,7 +137,7 @@ class vanillaRegularAccordion extends HTMLElement {
 }
 
 const regularAccordionCustomComponent = 'regular-accordion'
-customElements.define(regularAccordionCustomComponent, class extends vanillaRegularAccordion {});
+if (customElements.get(regularAccordionCustomComponent) === undefined) customElements.define(regularAccordionCustomComponent, class extends vanillaRegularAccordion {});
 
 export const createRegularAccordion =   (attributes) => {
     const regularAccordionElement = document.createElement(regularAccordionCustomComponent)

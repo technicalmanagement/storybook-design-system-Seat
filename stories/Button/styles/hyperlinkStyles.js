@@ -43,6 +43,7 @@ Style1[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "16px",
     color: "#190F14",
+    lineHeight: "20px",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 
 }
@@ -70,10 +71,10 @@ Style2 [BUTTON_SUBCOMPONENT] = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "21px", 
     background: "transparent",
     margin: "0px",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    height: "25px",
 }
 Style2[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
@@ -85,7 +86,11 @@ Style2[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "16px",
     color: "#190F14",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    height: "24px",
+    lineHeight: "24px"
+    
+
 
 }
 
@@ -127,7 +132,8 @@ Style3[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "16px",
     color: "#ECE9E1",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    lineHeight: "20px",
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
 
 }
 
@@ -157,7 +163,8 @@ Style4 [BUTTON_SUBCOMPONENT] = {
     height: "21px", 
     background: "transparent",
     margin: "0px",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    height: "25px",
 }
 Style4[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
@@ -169,7 +176,9 @@ Style4[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "16px",
     color: "#ECE9E1",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    height: "24px",
+    lineHeight: "24px"
 
 }
 
@@ -212,6 +221,7 @@ Style5[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "14px",
     color: "#190F14",
+    lineHeight: "16px",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
 
@@ -238,7 +248,7 @@ Style6 [BUTTON_SUBCOMPONENT] = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "17px", 
+    height: "21px", 
     background: "transparent",
     margin: "0px",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
@@ -252,8 +262,10 @@ Style6[TEXT_SUBCOMPONENT] = {
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "14px",
+    lineHeight: "20px",
     color: "#190F14",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    height: "20px",
 }
 
 const Style6Path = {}
@@ -294,6 +306,7 @@ Style7[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "14px",
     color: "#ECE9E1",
+    lineHeight: "16px",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
 
@@ -320,7 +333,7 @@ Style8 [BUTTON_SUBCOMPONENT] = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "17px", 
+    height: "21px", 
     background: "transparent",
     margin: "0px",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
@@ -335,7 +348,9 @@ Style8[TEXT_SUBCOMPONENT] = {
     fontWeight: "400",
     fontSize: "14px",
     color: "#ECE9E1",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    height: "20px",
+    lineHeight: "20px",
 }
 
 const Style8Path = {}

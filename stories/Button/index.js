@@ -34,12 +34,8 @@ connectedCallback() {
 }
 }
 
-var customElementName = NAME_OF_COMPONENT;
-customElements.define(customElementName, class extends vanillaButton {});
-export const SEAT_BUTTON = customElementName;
-
-
-
+if (customElements.get(NAME_OF_COMPONENT) === undefined) customElements.define(NAME_OF_COMPONENT, class extends vanillaButton {});
+export const SEAT_BUTTON = NAME_OF_COMPONENT;
 
 export const createSeatButton = (props) => {
  
