@@ -42,6 +42,10 @@ argOpt[ICON_ATTRIBUTE] = {
 control: { type: 'select' },
 options: [ OFF_OPTION],
 }
+argOpt[CHILDREN_ATTRIBUTE] = {
+    control: { type: 'text' },
+    
+    }
 export default {
 title: 'Seat Components/Buttons/Buttons Ghost',
 // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
@@ -60,6 +64,14 @@ defaultArgs[ONCLICK_ATTRIBUTE] = " "
 const Template = ({...args }) => {
 // You can either use a function to create DOM elements or use a plain html string!
 // return `<div>${label}</div>`;
+
+if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
+if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
+if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
+if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[COLOR_ATTRIBUTE]
+if (!args.hasOwnProperty(ICON_ATTRIBUTE)) args[ICON_ATTRIBUTE] = defaultArgs[ICON_ATTRIBUTE]
+//if (!args.hasOwnProperty(CHILDREN_ATTRIBUTE)) args[CHILDREN_ATTRIBUTE] = defaultArgs[CHILDREN_ATTRIBUTE]
+//if (!args.hasOwnProperty(ONCLICK_ATTRIBUTE)) args[ONCLICK_ATTRIBUTE] = defaultArgs[ONCLICK_ATTRIBUTE]
 return createSeatButton({ ...args });
 };
 

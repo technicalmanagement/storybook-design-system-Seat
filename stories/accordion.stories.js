@@ -52,6 +52,11 @@ defaultArgs[OPEN_ATTRIBUTE] = CLOSED_OPTION
 defaultArgs[TITLE_ATTRIBUTE] = TITLE_DEFAULT
 defaultArgs[CONTENT_TO_APPEND] = '<h1>Some generic content</h1>'
 const Template = ({...args }) => {
+//if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
+//if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
+//if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
+//if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[COLOR_ATTRIBUTE]
+//if (!args.hasOwnProperty(ICON_ATTRIBUTE)) args[ICON_ATTRIBUTE] = defaultArgs[ICON_ATTRIBUTE]
 // You can either use a function to create DOM elements or use a plain html string!
 // return `<div>${label}</div>`;
 return createSeatAccordion({ ...args });

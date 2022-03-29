@@ -61,6 +61,11 @@ defaultArgs[ONCLICK_ATTRIBUTE] = " "
 const Template = ({...args }) => {
 // You can either use a function to create DOM elements or use a plain html string!
 // return `<div>${label}</div>`;
+if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
+if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
+if (!args.hasOwnProperty(LINE_ATTRIBUTE)) args[LINE_ATTRIBUTE] = defaultArgs[LINE_ATTRIBUTE]
+if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[COLOR_ATTRIBUTE]
+if (!args.hasOwnProperty(ICON_ATTRIBUTE)) args[ICON_ATTRIBUTE] = defaultArgs[ICON_ATTRIBUTE]
 return createSeatButton({ ...args });
 };
 

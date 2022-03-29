@@ -48,7 +48,6 @@ export const createSeatAccordion = (props) => {
         {
             accordion.appendChild(children[i])
         }
-    console.log(accordion)
     ATTRIBUTES.forEach((ATTRIBUTE)=> {
       if (props.hasOwnProperty(ATTRIBUTE.attributeName)) accordion.setAttribute(ATTRIBUTE.attributeName,props[ATTRIBUTE.attributeName])
     })

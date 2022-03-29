@@ -43,6 +43,7 @@ export const createSeatButton = (props) => {
   const btn = document.createElement(SEAT_BUTTON);
   ATTRIBUTES.forEach((ATTRIBUTE)=> {
     if (props.hasOwnProperty(ATTRIBUTE.attributeName)) btn.setAttribute(ATTRIBUTE.attributeName,props[ATTRIBUTE.attributeName])
+    
   })
   
   return btn;
