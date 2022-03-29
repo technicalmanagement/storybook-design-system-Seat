@@ -122,9 +122,10 @@ export const processStyleMethod = (EVENTS_OF_COMPONENT, DEFAULT_EVENT= 'default'
                 {
                     var assignStyleEvent = () => 
                     {
+                        var keysEventCopy = [...keysEvent]
                         var indexCopy = i
                         var indexCopyj = j
-                        return () => element.style[keysEvent[indexCopyj]]=styleObject[keys[indexCopy]][keysEvent[indexCopyj]]
+                        return () => element.style[keysEventCopy[indexCopyj]]=styleObject[keys[indexCopy]][keysEventCopy[indexCopyj]]
                     }
                     styles[keys[i]].push(assignStyleEvent())
                 }

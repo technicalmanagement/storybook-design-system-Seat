@@ -53,3 +53,28 @@ class SeatTI extends HTMLElement {
 if (customElements.get(NAME_OF_COMPONENT) === undefined) customElements.define(NAME_OF_COMPONENT, class extends SeatTI {});
 export const SEAT_TEXT_INPUT = NAME_OF_COMPONENT;
 
+export const createSeatTextInput = (props) => {
+    const textInput = document.createElement(SEAT_TEXT_INPUT)
+    ATTRIBUTES.forEach((ATTRIBUTE)=> {
+      if (props.hasOwnProperty(ATTRIBUTE.attributeName)) textInput.setAttribute(ATTRIBUTE.attributeName,props[ATTRIBUTE.attributeName])
+    })
+    const mutationCallback = (mutationsList) => {
+        for (const mutation of mutationsList) {
+          if (
+            mutation.type !== "attributes" ||
+            mutation.attributeName !== "form-value"
+          ) {
+            return
+          }
+          var value = mutation.target.getAttribute("form-value")
+          var state = mutation.target.getAttribute("state")
+          if (value === "error" || value==="no") mutation.target.setAttribute("state","error")
+          else if (value==="validated" || value==="yes"|| value==="nop" ) mutation.target.setAttribute("state","validated")
+          else if (state !== null)  mutation.target.setAttribute("state","active")
+        }
+        }
+    const observer = new MutationObserver(mutationCallback)
+    observer.observe(textInput, { attributes: true })
+        
+    return textInput;
+}

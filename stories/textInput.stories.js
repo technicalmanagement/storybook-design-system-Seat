@@ -1,0 +1,71 @@
+import {COLOR_ATTRIBUTE,
+    SIZE_ATTRIBUTE, 
+    ICON_SELECTION_ATTRIBUTE,
+    ERROR_MESSAGE_ATTRIBUTE,
+    DESCRIPTOR_ATTRIBUTE,
+    TITLE_ATTRIBUTE,
+    FORM_WIDTH_ATTRIBUTE
+    } from "./TextInput/constants.js"
+
+import {BLACK_OPTION,
+    WHITE_OPTION,
+    LARGE_OPTION,
+    MEDIUM_OPTION,
+    } from "./TextInput/constants.js"
+import { createSeatTextInput } from './index.js';
+import Icons from "./Icons/allIcons.js"
+// More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
+const argOpt = {}
+argOpt[COLOR_ATTRIBUTE] = {
+control: { type: 'select' },
+options: [BLACK_OPTION, WHITE_OPTION],
+}
+argOpt[SIZE_ATTRIBUTE] = {
+control: { type: 'select' },
+options: [LARGE_OPTION, MEDIUM_OPTION],
+}
+argOpt[TITLE_ATTRIBUTE] = {
+    control: { type: 'text' },
+    }
+argOpt[ERROR_MESSAGE_ATTRIBUTE] = {
+        control: { type: 'text' },
+        }
+argOpt[DESCRIPTOR_ATTRIBUTE] = {
+    control: { type: 'text' },
+    }
+argOpt[FORM_WIDTH_ATTRIBUTE] = {
+    control: { type: 'text' },
+    }
+argOpt[ICON_SELECTION_ATTRIBUTE] = {
+  control: { type: 'select' },
+  options: Object.keys(Icons),
+}
+export default {
+title: 'Seat Components/TextInput',
+// More on argTypes: https://storybook.js.org/docs/html/api/argtypes
+argTypes: {...argOpt}
+};
+
+// More on component templates: https://storybook.js.org/docs/html/writing-stories/introduction#using-args
+var defaultArgs = {}
+defaultArgs[COLOR_ATTRIBUTE] = BLACK_OPTION
+defaultArgs[SIZE_ATTRIBUTE] = LARGE_OPTION
+defaultArgs[FORM_WIDTH_ATTRIBUTE] = ""
+//defaultArgs[FORM_WIDTH_ATTRIBUTE] = ""
+const Template = ({...args }) => {
+//if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
+if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
+//if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
+if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[COLOR_ATTRIBUTE]
+//if (!args.hasOwnProperty(FORM_WIDTH_ATTRIBUTE)) args[FORM_WIDTH_ATTRIBUTE] = defaultArgs[FOR]
+// You can either use a function to create DOM elements or use a plain html string!
+// return `<div>${label}</div>`;
+return createSeatTextInput({ ...args });
+};
+
+export const All = Template.bind({});
+All.args= {...defaultArgs}
+
+// More on args: https://storybook.js.org/docs/html/writing-stories/args
+
+

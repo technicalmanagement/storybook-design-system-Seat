@@ -222,6 +222,13 @@ Style1[SUCCESS_ICON_CONTAINER_SUBCOMPONENT][INPUT_EVENT] = {
     padding: "0px",
     cursor: "default"
 }
+Style1[SUCCESS_ICON_CONTAINER_SUBCOMPONENT][ERROR_EVENT] = {
+    margin: "0px",
+    width: "0px",
+    height: "0px", 
+    padding: "0px",
+    cursor: "default"
+}
 Style1[SUCCESS_ICON_SUBCOMPONENT] = {}
 Style1[SUCCESS_ICON_SUBCOMPONENT][SUCCESS_ICON_SUBCOMPONENT] = {
     display: "none",
