@@ -26,6 +26,7 @@ export const WHITE_OPTION = "white";
 //state options
 export const NORMAL_OPTION = "normal";
 export const DISABLED_OPTION = "disabled";
+export const HOVER_OPTION = "hover"
 //line options
 export const TITLE_OPTION = "title";
 export const PARAGRAPH_OPTION = "paragraph"
@@ -64,7 +65,7 @@ ATTRIBUTES.push({
 })
 ATTRIBUTES.push({
     attributeName: STATE_ATTRIBUTE,
-    defaultValue : null,
+    defaultValue : NORMAL_OPTION,
     proccessValue: (value) => {return   value}
 
 })

@@ -6,7 +6,9 @@ import {HIERARCHY_ATTRIBUTE,
     LINE_ATTRIBUTE,
     ICON_ATTRIBUTE,
     CHILDREN_ATTRIBUTE, 
-    ONCLICK_ATTRIBUTE } from "./Button/constants.js"
+    ONCLICK_ATTRIBUTE, 
+    STATE_ATTRIBUTE,
+    } from "./Button/constants.js"
 
 import {HYPERLINK_OPTION,
     BLACK_OPTION,
@@ -16,7 +18,9 @@ import {HYPERLINK_OPTION,
     PARAGRAPH_OPTION,
     TITLE_OPTION,
     OFF_OPTION,
-    CHILDREN_DEFAULT_OPTION} from "./Button/constants.js"
+    CHILDREN_DEFAULT_OPTION,
+    NORMAL_OPTION,
+    HOVER_OPTION} from "./Button/constants.js"
 import { ATTRIBUTES } from "./Button/constants.js"
 import { createSeatButton } from './index.js';
 
@@ -42,7 +46,10 @@ argOpt[LINE_ATTRIBUTE] = {
     control: { type: 'select' },
     options: [ TITLE_OPTION, PARAGRAPH_OPTION],
     }
-
+argOpt[STATE_ATTRIBUTE] = {
+    control: { type: 'select' },
+    options: [ NORMAL_OPTION, HOVER_OPTION],
+    }
 export default {
 title: 'Seat Components/Buttons/Buttons Hyperlink',
 // More on argTypes: https://storybook.js.org/docs/html/api/argtypes

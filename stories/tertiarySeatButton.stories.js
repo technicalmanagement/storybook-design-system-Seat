@@ -16,6 +16,7 @@ import {TERTIARY_OPTION,
     WHITE_OPTION,
     NORMAL_OPTION,
     DISABLED_OPTION,
+    HOVER_OPTION,
     ON_OPTION,
     OFF_OPTION,
     CHILDREN_DEFAULT_OPTION} from "./Button/constants.js"
@@ -39,7 +40,7 @@ options: [BLACK_OPTION, WHITE_OPTION],
 }
 argOpt[STATE_ATTRIBUTE] = {
 control: { type: 'select' },
-options: [NORMAL_OPTION, DISABLED_OPTION],
+options: [NORMAL_OPTION, DISABLED_OPTION, HOVER_OPTION],
 }
 argOpt[ICON_ATTRIBUTE] = {
 control: { type: 'select' },

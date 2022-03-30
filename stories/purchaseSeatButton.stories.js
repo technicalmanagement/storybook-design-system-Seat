@@ -18,6 +18,7 @@ import {PURCHASE_OPTION,
     SMALL_OPTION,
     NORMAL_OPTION,
     DISABLED_OPTION,
+    HOVER_OPTION,
     ON_OPTION,
     OFF_OPTION,
     CHILDREN_DEFAULT_OPTION} from "./Button/constants.js"
@@ -41,7 +42,7 @@ options: [PRIMARY_PURCHASE_HIERARCHY_OPTION, SECONDARY_PURCHASE_HIERARCHY_OPTION
 }
 argOpt[STATE_ATTRIBUTE] = {
 control: { type: 'select' },
-options: [NORMAL_OPTION, DISABLED_OPTION],
+options: [NORMAL_OPTION, DISABLED_OPTION, HOVER_OPTION],
 }
 argOpt[ICON_ATTRIBUTE] = {
 control: { type: 'select' },
