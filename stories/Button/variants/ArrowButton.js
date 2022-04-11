@@ -9,16 +9,22 @@ import {NAME_OF_COMPONENT as ICON} from "../../Icons/constants.js"
 import {ICON_SELECTION_ATTRIBUTE as ICON_SELECTION_ATTRIBUTE_FOR_COMPONENT} from "../../Icons/constants.js"
 import {ICON_COLOR_ATTRIBUTE, ICON_HEIGHT_ATTRIBUTE, ICON_WIDTH_ATTRIBUTE} from "../../Icons/constants.js"
 import {NAV_ARROW_ICON_OPTION} from "../../Icons/constants.js"
+import { STYLE_KEY } from "../../commonMethodsAndConstants/Styles/commonConstants.js"
 
 
-export const arrowButton = function (attributes,styleKey)
+export const arrowButton = function (attributes,elementToAppend)
 {
+const styleKey = attributes[STYLE_KEY]
 const styles = setStyle(styleKey)
-const button = document.createElement('button')
+if (elementToAppend[0].textContent) attributes[CHILDREN_ATTRIBUTE] = elementToAppend[0].textContent
+const button = elementToAppend[0]
+while (button.hasChildNodes()) 
+{
+        button.removeChild(button.firstChild);
+}
 const stylesProccessedButton = processStyle(button,styles[BUTTON_SUBCOMPONENT])
 const onMouseOutButtonStyles = stylesProccessedButton[DEFAULT_EVENT]
 const onMouseOverButtonStyles = stylesProccessedButton[HOVER_BUTTON_EVENT]
-button.addEventListener("click",attributes[ONCLICK_ATTRIBUTE])
 const textNode = document.createTextNode(attributes[CHILDREN_ATTRIBUTE])
 const textButton = document.createElement('div')
 const stylesProccessedText = processStyle(textButton,styles[TEXT_SUBCOMPONENT])

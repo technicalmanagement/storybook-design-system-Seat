@@ -22,8 +22,7 @@ import {PURCHASE_OPTION,
     ON_OPTION,
     OFF_OPTION,
     CHILDREN_DEFAULT_OPTION} from "./Button/constants.js"
-import { ATTRIBUTES } from "./Button/constants.js"
-import { createSeatButton } from './index.js';
+import { createSeatButton,CONTENT_TO_APPEND } from './index.js';
 import Icons from "./Icons/allIcons.js"
 
 // More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
@@ -44,15 +43,13 @@ argOpt[STATE_ATTRIBUTE] = {
 control: { type: 'select' },
 options: [NORMAL_OPTION, DISABLED_OPTION, HOVER_OPTION],
 }
-argOpt[ICON_ATTRIBUTE] = {
-control: { type: 'select' },
-options: [ON_OPTION, OFF_OPTION],
-}
 argOpt[ICON_SELECTION_ATTRIBUTE] = {
 control: { type: 'select' },
 options: Object.keys(Icons),
 }
-
+argOpt[CONTENT_TO_APPEND] = {
+    control: { type: 'text' },
+    }
 export default {
 title: 'Seat Components/Buttons/Buttons Purchase',
 // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
@@ -65,9 +62,7 @@ defaultArgs[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
 defaultArgs[SIZE_ATTRIBUTE] = LARGE_OPTION
 defaultArgs[PURCHASE_HIERARCHY_ATTRIBUTE] = PRIMARY_PURCHASE_HIERARCHY_OPTION
 defaultArgs[STATE_ATTRIBUTE] = NORMAL_OPTION
-defaultArgs[ICON_ATTRIBUTE] = OFF_OPTION
-defaultArgs[CHILDREN_ATTRIBUTE] = CHILDREN_DEFAULT_OPTION
-defaultArgs[ONCLICK_ATTRIBUTE] = " "
+defaultArgs[CONTENT_TO_APPEND] = `<button  onclick="alert('Hi!')">Click Me!</button>`
 const Template = ({...args }) => {
 // You can either use a function to create DOM elements or use a plain html string!
 // return `<div>${label}</div>`;
@@ -75,7 +70,7 @@ if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defau
 if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
 if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
 if (!args.hasOwnProperty(PURCHASE_HIERARCHY_ATTRIBUTE)) args[PURCHASE_HIERARCHY_ATTRIBUTE] = defaultArgs[PURCHASE_HIERARCHY_ATTRIBUTE]
-if (!args.hasOwnProperty(ICON_ATTRIBUTE)) args[ICON_ATTRIBUTE] = defaultArgs[ICON_ATTRIBUTE]
+if (!args.hasOwnProperty(CONTENT_TO_APPEND)) args[CONTENT_TO_APPEND] = defaultArgs[CONTENT_TO_APPEND]
 return createSeatButton({ ...args });
 };
 

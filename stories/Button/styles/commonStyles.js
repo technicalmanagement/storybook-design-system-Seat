@@ -13,9 +13,12 @@ SIZE_STYLES[LARGE_OPTION] = {}
 
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT] = {}
 SIZE_STYLES [LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "670px",
 minWidth: "132px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "20px",
@@ -27,9 +30,12 @@ SIZE_STYLES[MEDIUM_OPTION] = {}
 
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT] = {}
 SIZE_STYLES [MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "951px",
 minWidth: "212px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -41,9 +47,12 @@ SIZE_STYLES[SMALL_OPTION] = {}
 
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT] = {}
 SIZE_STYLES [SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "731px",
 minWidth: "136px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -54,9 +63,12 @@ overflow: "hidden",
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT] = {}
 
 SIZE_STYLES [LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "670px",
 minWidth: "132px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "20px",
@@ -67,9 +79,12 @@ overflow: "hidden",
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT] = {}
 
 SIZE_STYLES [MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "951px",
 minWidth: "212px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -80,9 +95,12 @@ overflow: "hidden",
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT] = {}
 
 SIZE_STYLES [SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "731px",
 minWidth: "136px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -92,10 +110,13 @@ overflow: "hidden",
 
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT] = {}
 SIZE_STYLES [LARGE_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 justifyContent: "flex-start",
 padding: "0px 16px",
 maxWidth: "670px",
 minWidth: "132px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "20px",
@@ -105,9 +126,12 @@ overflow: "hidden",
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT] = {}
 
 SIZE_STYLES [MEDIUM_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "951px",
 minWidth: "212px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -117,9 +141,12 @@ overflow: "hidden",
 SIZE_STYLES[SMALL_OPTION][ARROW_BUTTON_VARIANT] = {}
 
 SIZE_STYLES [SMALL_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "731px",
 minWidth: "136px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[SMALL_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -128,10 +155,13 @@ overflow: "hidden",
 }
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT] = {}
 SIZE_STYLES [LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 justifyContent: "flex-start",
 padding: "0px 16px",
 maxWidth: "670px",
 minWidth: "132px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "20px",
@@ -141,9 +171,12 @@ overflow: "hidden",
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT] = {}
 
 SIZE_STYLES [MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "951px",
 minWidth: "212px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",
@@ -153,9 +186,12 @@ overflow: "hidden",
 SIZE_STYLES[SMALL_OPTION][ARROW_BUTTON_ICON_VARIANT] = {}
 
 SIZE_STYLES [SMALL_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT] = {
+textDecoration: "none",
 padding: "0px 16px",
 maxWidth: "731px",
 minWidth: "136px",
+width: "fit-content",
+boxSizing: "border-box",
 }
 SIZE_STYLES[SMALL_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 height: "16px",

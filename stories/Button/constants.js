@@ -1,14 +1,14 @@
 // attributeNames
-export const HIERARCHY_ATTRIBUTE = "hierarchy";
-export const SIZE_ATTRIBUTE = "size";
-export const COLOR_ATTRIBUTE = "color";
-export const STATE_ATTRIBUTE = "state";
-export const LINE_ATTRIBUTE = "line";
-export const ICON_ATTRIBUTE = "icon";
-export const ICON_SELECTION_ATTRIBUTE = "iconSelection";
-export const PURCHASE_HIERARCHY_ATTRIBUTE = "purchaseHierarchy";
-export const CHILDREN_ATTRIBUTE = "children";
-export const ONCLICK_ATTRIBUTE = "onClick";
+export const HIERARCHY_ATTRIBUTE = "data-hierarchy";
+export const SIZE_ATTRIBUTE = "data-size";
+export const COLOR_ATTRIBUTE = "data-color";
+export const STATE_ATTRIBUTE = "data-state";
+export const LINE_ATTRIBUTE = "data-line";
+export const ICON_ATTRIBUTE = "data-icon";
+export const ICON_SELECTION_ATTRIBUTE = "data-icon-selection";
+export const PURCHASE_HIERARCHY_ATTRIBUTE = "data-purchase-hierarchy";
+export const CHILDREN_ATTRIBUTE = "data-children";
+export const ONCLICK_ATTRIBUTE = "data-onClick";
 // hierarchy options
 export const PRIMARY_OPTION = "primary";
 export const SECONDARY_OPTION = "secondary";
@@ -65,7 +65,7 @@ ATTRIBUTES.push({
 })
 ATTRIBUTES.push({
     attributeName: STATE_ATTRIBUTE,
-    defaultValue : NORMAL_OPTION,
+    defaultValue : null,
     proccessValue: (value) => {return   value}
 
 })

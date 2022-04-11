@@ -22,7 +22,7 @@ import {HYPERLINK_OPTION,
     NORMAL_OPTION,
     HOVER_OPTION} from "./Button/constants.js"
 import { ATTRIBUTES } from "./Button/constants.js"
-import { createSeatButton } from './index.js';
+import { createSeatButton, CONTENT_TO_APPEND } from './index.js';
 
 // More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
 const argOpt = {}
@@ -38,10 +38,6 @@ argOpt[COLOR_ATTRIBUTE] = {
 control: { type: 'select' },
 options: [BLACK_OPTION, WHITE_OPTION],
 }
-argOpt[ICON_ATTRIBUTE] = {
-control: { type: 'select' },
-options: [ OFF_OPTION],
-}
 argOpt[LINE_ATTRIBUTE] = {
     control: { type: 'select' },
     options: [ TITLE_OPTION, PARAGRAPH_OPTION],
@@ -49,6 +45,9 @@ argOpt[LINE_ATTRIBUTE] = {
 argOpt[STATE_ATTRIBUTE] = {
     control: { type: 'select' },
     options: [ NORMAL_OPTION, HOVER_OPTION],
+    }
+argOpt[CONTENT_TO_APPEND] = {
+    control: { type: 'text' },
     }
 export default {
 title: 'Seat Components/Buttons/Buttons Hyperlink',
@@ -58,21 +57,23 @@ argTypes: {...argOpt}
 
 // More on component templates: https://storybook.js.org/docs/html/writing-stories/introduction#using-args
 var defaultArgs = {}
+defaultArgs[STATE_ATTRIBUTE] = NORMAL_OPTION
 defaultArgs[HIERARCHY_ATTRIBUTE] = HYPERLINK_OPTION
 defaultArgs[SIZE_ATTRIBUTE] = LARGE_OPTION
 defaultArgs[COLOR_ATTRIBUTE] = BLACK_OPTION
 defaultArgs[LINE_ATTRIBUTE] = TITLE_OPTION
-defaultArgs[ICON_ATTRIBUTE] = OFF_OPTION
-defaultArgs[CHILDREN_ATTRIBUTE] = CHILDREN_DEFAULT_OPTION
-defaultArgs[ONCLICK_ATTRIBUTE] = " "
+defaultArgs[CONTENT_TO_APPEND] = `<button  onclick="alert('Hi!')">Click Me!</button>`
+
 const Template = ({...args }) => {
 // You can either use a function to create DOM elements or use a plain html string!
 // return `<div>${label}</div>`;
+if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
 if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
 if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
 if (!args.hasOwnProperty(LINE_ATTRIBUTE)) args[LINE_ATTRIBUTE] = defaultArgs[LINE_ATTRIBUTE]
 if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[COLOR_ATTRIBUTE]
-if (!args.hasOwnProperty(ICON_ATTRIBUTE)) args[ICON_ATTRIBUTE] = defaultArgs[ICON_ATTRIBUTE]
+if (!args.hasOwnProperty(CONTENT_TO_APPEND)) args[CONTENT_TO_APPEND] = defaultArgs[CONTENT_TO_APPEND]
+//if (!args.hasOwnProperty(ICON_ATTRIBUTE)) args[ICON_ATTRIBUTE] = defaultArgs[ICON_ATTRIBUTE]
 return createSeatButton({ ...args });
 };
 
