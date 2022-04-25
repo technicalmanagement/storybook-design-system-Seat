@@ -6,7 +6,8 @@ import {COLOR_ATTRIBUTE,
         DESCRIPTOR_ON_ATTRIBUTE,
         ICON_SELECTION_ATTRIBUTE,
         DESCRIPTOR_ATTRIBUTE,
-        STATE_ATTRIBUTE} from './constants.js'
+        STATE_ATTRIBUTE,
+        FORM_VALUE_ATTRIBUTE} from './constants.js'
 import {ICON_DEFAULT,
         DESCRIPTOR_DEFAULT,
         DESCRIPTOR_ON_OPTION,
@@ -69,15 +70,15 @@ export const createSeatTextInput = (props) => {
         for (const mutation of mutationsList) {
           if (
             mutation.type !== "attributes" ||
-            mutation.attributeName !== "form-value"
+            mutation.attributeName !== FORM_VALUE_ATTRIBUTE
           ) {
             return
           }
-          var value = mutation.target.getAttribute("form-value")
-          var state = mutation.target.getAttribute("state")
-          if (value === "error" || value==="no") mutation.target.setAttribute("state","error")
-          else if (value==="validated" || value==="yes"|| value==="nop" ) mutation.target.setAttribute("state","validated")
-          else if (state !== null)  mutation.target.setAttribute("state","active")
+          var value = mutation.target.getAttribute(FORM_VALUE_ATTRIBUTE)
+          var state = mutation.target.getAttribute(STATE_ATTRIBUTE)
+          if (value === "error" || value==="no") mutation.target.setAttribute(STATE_ATTRIBUTE,"error")
+          else if (value==="validated" || value==="yes"|| value==="nop" ) mutation.target.setAttribute(STATE_ATTRIBUTE,"validated")
+          else if (state !== null)  mutation.target.setAttribute(STATE_ATTRIBUTE,"active")
         }
         }
     const observer = new MutationObserver(mutationCallback)
