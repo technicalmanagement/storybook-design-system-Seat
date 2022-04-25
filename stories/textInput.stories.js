@@ -12,7 +12,7 @@ import {BLACK_OPTION,
     LARGE_OPTION,
     MEDIUM_OPTION,
     } from "./TextInput/constants.js"
-import { createSeatTextInput } from './index.js';
+import { createSeatTextInput, CONTENT_TO_APPEND } from './index.js';
 import Icons from "./Icons/allIcons.js"
 // More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
 const argOpt = {}
@@ -40,6 +40,9 @@ argOpt[ICON_SELECTION_ATTRIBUTE] = {
   control: { type: 'select' },
   options: Object.keys(Icons),
 }
+argOpt[CONTENT_TO_APPEND] = {
+    control: { type: 'text' },
+    }
 export default {
 title: 'Seat Components/TextInput',
 // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
@@ -51,6 +54,7 @@ var defaultArgs = {}
 defaultArgs[COLOR_ATTRIBUTE] = BLACK_OPTION
 defaultArgs[SIZE_ATTRIBUTE] = LARGE_OPTION
 defaultArgs[FORM_WIDTH_ATTRIBUTE] = ""
+defaultArgs[CONTENT_TO_APPEND] = `<input type="text">`
 //defaultArgs[FORM_WIDTH_ATTRIBUTE] = ""
 const Template = ({...args }) => {
 //if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
@@ -60,6 +64,7 @@ if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[C
 //if (!args.hasOwnProperty(FORM_WIDTH_ATTRIBUTE)) args[FORM_WIDTH_ATTRIBUTE] = defaultArgs[FOR]
 // You can either use a function to create DOM elements or use a plain html string!
 // return `<div>${label}</div>`;
+if (!args.hasOwnProperty(CONTENT_TO_APPEND)) args[CONTENT_TO_APPEND] = defaultArgs[CONTENT_TO_APPEND]
 return createSeatTextInput({ ...args });
 };
 

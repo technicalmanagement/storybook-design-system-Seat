@@ -10,9 +10,9 @@ export const TITLE_ATTRIBUTE = "title";
 export const BLACK_OPTION = "black";
 export const WHITE_OPTION = "white";
 //size options
-export const BIG_OPTION = "big";
-export const SMALL_OPTION = "small";
-export const SMALLEST_OPTION = "smallest";
+export const BIG_OPTION = "L";
+export const SMALL_OPTION = "M";
+export const SMALLEST_OPTION = "S";
 // open options
 export const OPENED_OPTION = "isOpen";
 export const CLOSED_OPTION = "isClosed";

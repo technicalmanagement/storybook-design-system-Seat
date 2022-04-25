@@ -10,7 +10,8 @@ import { LARGE_OPTION,
          DESCRIPTOR_OFF_OPTION  } from "../constants.js"
 import {INPUT_EVENT, VALIDATED_EVENT, ERROR_EVENT} from "../constants.js"
 import {REGULAR_TEXT_INPUT_DESCRIPTOR_VARIANT } from "../constants.js"
-import {CONTAINER_SUB_WRAPPER,
+import {CONTAINER_SLOT_WRAPPER,
+        CONTAINER_SUB_WRAPPER,
         TEXT_INPUT_CONTAINER_SUBCOMPONENT,
         TITLE_PLUS_TEXT_CONTAINER_SUBCOMPONENT,
         TITLE_SUBCOMPONENT,
@@ -38,6 +39,9 @@ import {ICON_COLOR_ATTRIBUTE,
 //                  I----------->ERROR_SUBCOMPONENT
 const regularTextInputDescriptorStyles = []
 const Style1 = {}
+Style1[CONTAINER_SLOT_WRAPPER] = {
+    display: "none",
+}
 Style1[CONTAINER_WRAPPER] = {
     margin: "0px",
     width: "260px",
@@ -47,7 +51,7 @@ Style1[CONTAINER_WRAPPER] = {
 Style1[CONTAINER_SUB_WRAPPER] = {
     transition: "0.2s all ease-in-out",
     margin: "0px",
-    width: "100%",
+    width: "260px",
     height: "80px", 
     display: "flex",
     flexDirection: "column",
@@ -131,7 +135,7 @@ Style1[TEXT_SUBCOMPONENT] = {
     width: "calc(100%-2px)",
     backgroundColor: "transparent",
     color: "#190F14",
-    fontFamily: 'SEAT BCN',
+    fontFamily: 'SEATBCN',
     fontStyle: "normal",
     fontSize: "16px",
     
