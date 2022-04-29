@@ -1,7 +1,9 @@
+
 import {ICON_ATTRIBUTE,
   ICON_SELECTION_ATTRIBUTE,
   CHILDREN_ATTRIBUTE,
   ONCLICK_ATTRIBUTE,
+  SIZE_ATTRIBUTE
   } from "./constants.js"
 import {ON_OPTION,
   OFF_OPTION,
@@ -22,6 +24,7 @@ constructor()
 connectedCallback() {
   
   const buttonOrAnchor = []
+  //CREATION OF A DEFAULT BUTTON IF NOTHING IS APPENDED 
   const buttonDefault = document.createElement('button')
   const textNode = document.createTextNode('Call to action')
   buttonDefault.appendChild(textNode)
@@ -30,40 +33,45 @@ connectedCallback() {
   if (this.getElementsByTagName('button').length>0) 
   {
       buttonOrAnchor.pop()
-      buttonOrAnchor.push(this.getElementsByTagName('button')[0].cloneNode(true))
+      buttonOrAnchor.push(this.getElementsByTagName('button')[0])
   }
   else if (this.getElementsByTagName('a').length>0) 
   {
       buttonOrAnchor.pop()
-      buttonOrAnchor.push(this.getElementsByTagName('a')[0].cloneNode(true))
+      buttonOrAnchor.push(this.getElementsByTagName('a')[0])
   }
+  const slotContainer = document.createElement('div')
+  slotContainer.style.display = 'none'
+  const slotSubComponent = document.createElement('slot')
+
   const attributes = {}
   ATTRIBUTES.forEach((ATTRIBUTE)=>{ 
       if (this.getAttribute(ATTRIBUTE.attributeName)) attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.proccessValue(this.getAttribute(ATTRIBUTE.attributeName))
       else attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.defaultValue
                   })
+  if (!this.getAttribute(SIZE_ATTRIBUTE)) this.setAttribute(SIZE_ATTRIBUTE,attributes[SIZE_ATTRIBUTE])
+  
   const keysAttributes = {...attributes}
   delete keysAttributes[CHILDREN_ATTRIBUTE];
   delete keysAttributes[ONCLICK_ATTRIBUTE];
   delete keysAttributes[ICON_SELECTION_ATTRIBUTE];
-
   if (attributes[ICON_SELECTION_ATTRIBUTE] === ICON_DEFAULT) keysAttributes[ICON_ATTRIBUTE] = OFF_OPTION
   else keysAttributes[ICON_ATTRIBUTE] = ON_OPTION
+  
+  
   const stylesKeys = setKeys(keysAttributes)
   
   attributes[STYLE_KEY] = stylesKeys[STYLE_KEY]
-  const button = COMPONENTS[stylesKeys[COMPONENT_VARIANT_KEY]] (attributes,buttonOrAnchor)
-  //if (this.shadow.children.length === 0) this.shadow.appendChild(button)
-  const slotContainer = document.createElement('div')
-  slotContainer.style.display = 'none'
-  
-  const slotSubComponent = document.createElement('slot')
-  slotContainer.appendChild(slotSubComponent)
+  attributes[CHILDREN_ATTRIBUTE] = buttonOrAnchor[0].textContent
+  const button = COMPONENTS[stylesKeys[COMPONENT_VARIANT_KEY]] (attributes)
+  button.onclick = () => {buttonOrAnchor[0].click()}
+ 
   this.shadow.appendChild(slotContainer)
-  this.shadow.appendChild(button)
-  
+      slotContainer.appendChild(slotSubComponent)
+  this.shadow.appendChild(button) 
 }
 }
+
 
 if (customElements.get(NAME_OF_COMPONENT) === undefined) customElements.define(NAME_OF_COMPONENT, class extends vanillaButton {});
 export const SEAT_BUTTON = NAME_OF_COMPONENT;

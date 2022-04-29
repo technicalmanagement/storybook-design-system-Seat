@@ -43,7 +43,7 @@ boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
 justifyContent: "center",
 alignItems: "center",
-height: "46px", 
+height: "48px", 
 background: "#EA5D1A",
 border: "none",
 borderRadius: "2px",
@@ -89,7 +89,7 @@ boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
 justifyContent: "center",
 alignItems: "center",
-height: "46px", 
+height: "48px", 
 background: "#EA5D1A",
 border: "none",
 borderRadius: "2px",
@@ -625,17 +625,19 @@ boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
 justifyContent: "center",
 alignItems: "center",
-height: "46px", 
+height: "48px", 
 background: "transparent",
 border: "1px solid #EA5D1A",
 borderRadius: "2px",
 boxShadow: "none",
 opacity: "1.0",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style13[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
+padding: "0px 16px",
 }
 Style13[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -671,17 +673,19 @@ boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
 justifyContent: "center",
 alignItems: "center",
-height: "46px", 
+height: "48px", 
 background: "transparent",
 border: "1px solid #EA5D1A",
 borderRadius: "2px",
 boxShadow: "none",
 boxSizing: "border-box",
 opacity: "1.0",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style14[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
+padding: "0px 16px",
 border: "2px solid #EA5D1A",
 }
 Style14[TEXT_SUBCOMPONENT] = {
@@ -827,11 +831,13 @@ border: "1px solid #EA5D1A",
 borderRadius: "2px",
 boxShadow: "none",
 opacity: "1",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style17[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
+padding: "0px 16px",
 }
 Style17[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -872,10 +878,12 @@ border: "1px solid #EA5D1A",
 borderRadius: "2px",
 boxShadow: "none",
 opacity: "1",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style18[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
+padding: "0px 16px",
 }
 Style18[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -969,34 +977,37 @@ boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
-Style20[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
-color: "#EEA786",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
+Style20[TEXT_SUBCOMPONENT] = 
+{
+    position        : "static",
+    fontFamily      : "SEATBCN",
+    fontStyle       : "normal",
+    fontWeight      : "bold",
+    fontSize        : "14px",
+    color           : "#EEA786",
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
-Style20[ICON_CONTAINER_SUBCOMPONENT] ={
-color: "#EEA786",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+Style20[ICON_CONTAINER_SUBCOMPONENT] = 
+{
+    color           : "#EEA786",
+    width           : "24px",
+    height          : "24px",
+    display         : "flex",
+    justifyContent  : "center",
+    alignItems      : "center",
 }
-Style20[ICON_SUBCOMPONENT] = {
-color: "#EEA786",
-width: "13.5px",
-height: "13.5px",
+Style20[ICON_SUBCOMPONENT] = 
+{
+    color           : "#EEA786",
+    width           : "13.5px",
+    height          : "13.5px",
 }
 const Style20Path = {}
-Style20Path[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
-Style20Path[PURCHASE_HIERARCHY_ATTRIBUTE] = SECONDARY_PURCHASE_HIERARCHY_OPTION
-Style20Path[SIZE_ATTRIBUTE] = MEDIUM_OPTION
-Style20Path [STATE_ATTRIBUTE] = DISABLED_OPTION
-Style20Path[ICON_ATTRIBUTE] = ON_OPTION 
+Style20Path [HIERARCHY_ATTRIBUTE]            = PURCHASE_OPTION
+Style20Path [PURCHASE_HIERARCHY_ATTRIBUTE]   = SECONDARY_PURCHASE_HIERARCHY_OPTION
+Style20Path [SIZE_ATTRIBUTE]                 = MEDIUM_OPTION
+Style20Path [STATE_ATTRIBUTE]                = DISABLED_OPTION
+Style20Path [ICON_ATTRIBUTE]                 = ON_OPTION 
 
 const styleWrapper20 = {}
 styleWrapper20[STYLE_OBJECT] = {...Style20}
@@ -1022,10 +1033,12 @@ border: "1px solid #EA5D1A",
 borderRadius: "2px",
 boxShadow: "none",
 opacity: "1",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style21[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
+padding: "0px 16px",
 }
 Style21[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1066,10 +1079,12 @@ border: "1px solid #EA5D1A",
 borderRadius: "2px",
 boxShadow: "none",
 opacity: "1",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style22[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
+padding: "0px 16px",
 }
 Style22[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1210,7 +1225,10 @@ height: "20px",
 background: "transparent",
 border: "none",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-
+paddingRight: "22px",
+}
+Style25[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
+paddingRight: "16px",
 }
 Style25[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1227,14 +1245,14 @@ color: '#EEA786',
 }
 
 Style25[ICONARROW_CONTAINER_SUBCOMPONENT] = {
-transition: "0.5s all ease-in-out",
-color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
+transition:     "0.5s all ease-in-out",
+color:          "#EA5D1A",
+width:          "20px",
+height:         "20px",
+display:        "flex",
 justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
+alignItems:     "center",
+margin:         "0px 0px 0px 2px",
 
 }
 Style25[ICONARROW_CONTAINER_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
@@ -1274,6 +1292,10 @@ height: "20px",
 background: "transparent",
 border: "none",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+paddingRight: "22px",
+}
+Style26[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
+paddingRight: "16px",
 }
 Style26[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1468,12 +1490,15 @@ Style29 [BUTTON_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
-justifyContent: "center",
 alignItems: "center",
 height: "20px", 
 background: "transparent",
 border: "none",
-...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+paddingRight: "22px",
+}
+Style29[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
+paddingRight: "16px",
 }
 Style29[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1529,15 +1554,15 @@ Style30 [BUTTON_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
-justifyContent: "center",
 alignItems: "center",
 height: "20px", 
 background: "transparent",
 border: "none",
-...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+paddingRight: "22px",
 }
 Style30[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
-width: "152px",
+paddingRight: "16px",
 }
 Style30[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1610,7 +1635,6 @@ Style31 [BUTTON_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
-justifyContent: "center",
 alignItems: "center",
 height: "20px", 
 background: "transparent",
@@ -1663,7 +1687,6 @@ Style32 [BUTTON_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 boxShadow: "inset 0 0 0 2px transparent",
 display: "flex",
-justifyContent: "center",
 alignItems: "center",
 height: "20px", 
 background: "transparent",
@@ -1727,4 +1750,56 @@ styleWrapper32[COMPONENT_VARIANT_KEY] = ARROW_BUTTON_ICON_VARIANT
 styleWrapper32[PATH_STYLE] = Style32Path
 purchaseStyles.push(styleWrapper32)
 
+// THERE'S NO SPECIFIC STYLE FOR SMALL_OPTION SO WE COPY THE SAME STYLES AS MEDIUM_OPTION
+const Style33Path = {}
+Style33Path[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
+Style33Path[PURCHASE_HIERARCHY_ATTRIBUTE] = TERTIARY_PURCHASE_HIERARCHY_OPTION
+Style33Path[SIZE_ATTRIBUTE] = SMALL_OPTION
+Style33Path [STATE_ATTRIBUTE] = NORMAL_OPTION
+Style33Path[ICON_ATTRIBUTE] = OFF_OPTION 
+
+const styleWrapper33 = {}
+styleWrapper33[STYLE_OBJECT] = {...Style29}
+styleWrapper33[COMPONENT_VARIANT_KEY] = ARROW_BUTTON_VARIANT
+styleWrapper33[PATH_STYLE] = Style33Path
+purchaseStyles.push(styleWrapper33)
+
+const Style34Path = {}
+Style34Path[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
+Style34Path[PURCHASE_HIERARCHY_ATTRIBUTE] = TERTIARY_PURCHASE_HIERARCHY_OPTION
+Style34Path[SIZE_ATTRIBUTE] = SMALL_OPTION
+Style34Path [STATE_ATTRIBUTE] = NORMAL_OPTION
+Style34Path[ICON_ATTRIBUTE] = ON_OPTION 
+
+const styleWrapper34 = {}
+styleWrapper34[STYLE_OBJECT] = {...Style30}
+styleWrapper34[COMPONENT_VARIANT_KEY] = ARROW_BUTTON_ICON_VARIANT
+styleWrapper34[PATH_STYLE] = Style34Path
+purchaseStyles.push(styleWrapper34)
+
+const Style35Path = {}
+Style35Path[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
+Style35Path[PURCHASE_HIERARCHY_ATTRIBUTE] = TERTIARY_PURCHASE_HIERARCHY_OPTION
+Style35Path[SIZE_ATTRIBUTE] = SMALL_OPTION
+Style35Path [STATE_ATTRIBUTE] = DISABLED_OPTION
+Style35Path[ICON_ATTRIBUTE] = OFF_OPTION 
+
+const styleWrapper35 = {}
+styleWrapper35[STYLE_OBJECT] = {...Style31}
+styleWrapper35[COMPONENT_VARIANT_KEY] = ARROW_BUTTON_VARIANT
+styleWrapper35[PATH_STYLE] = Style35Path
+purchaseStyles.push(styleWrapper35)
+
+const Style36Path = {}
+Style36Path[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
+Style36Path[PURCHASE_HIERARCHY_ATTRIBUTE] = TERTIARY_PURCHASE_HIERARCHY_OPTION
+Style36Path[SIZE_ATTRIBUTE] = SMALL_OPTION
+Style36Path [STATE_ATTRIBUTE] = DISABLED_OPTION
+Style36Path[ICON_ATTRIBUTE] = ON_OPTION 
+
+const styleWrapper36 = {}
+styleWrapper36[STYLE_OBJECT] = {...Style32}
+styleWrapper36[COMPONENT_VARIANT_KEY] = ARROW_BUTTON_ICON_VARIANT
+styleWrapper36[PATH_STYLE] = Style36Path
+purchaseStyles.push(styleWrapper36)
 export  {purchaseStyles};

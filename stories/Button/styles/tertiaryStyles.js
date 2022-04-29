@@ -2,7 +2,8 @@ import {HIERARCHY_ATTRIBUTE,
     SIZE_ATTRIBUTE, 
     COLOR_ATTRIBUTE,
     STATE_ATTRIBUTE,
-    ICON_ATTRIBUTE} from "../constants.js"
+    ICON_ATTRIBUTE,
+    SMALL_OPTION} from "../constants.js"
 import {TERTIARY_OPTION,
     LARGE_OPTION,
     MEDIUM_OPTION,
@@ -122,7 +123,7 @@ Style2[ICON_CONTAINER_SUBCOMPONENT] ={
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    margin: "0px 0px 0px 8px",
+    margin: "0px 8px 0px 0px",
 }
 Style2[ICON_SUBCOMPONENT] = {
     color: "#190F14",
@@ -1066,4 +1067,57 @@ styleWrapper16[STYLE_OBJECT] = {...Style16}
 styleWrapper16[COMPONENT_VARIANT_KEY] = ARROW_BUTTON_ICON_VARIANT
 styleWrapper16[PATH_STYLE] = Style16Path
 tertiaryStyles.push(styleWrapper16)
+
+// THERE'S NO SPECIFIC STYLE FOR SMALL_OPTION SO WE COPY THE SAME STYLES AS MEDIUM_OPTION
+const Style17Path = {}
+Style17Path[HIERARCHY_ATTRIBUTE]    = TERTIARY_OPTION
+Style17Path[SIZE_ATTRIBUTE]         = SMALL_OPTION
+Style17Path[COLOR_ATTRIBUTE]        = WHITE_OPTION
+Style17Path [STATE_ATTRIBUTE]       = NORMAL_OPTION
+Style17Path[ICON_ATTRIBUTE]         = OFF_OPTION 
+
+const styleWrapper17 = {}
+styleWrapper17[STYLE_OBJECT]            = {...Style13}
+styleWrapper17[COMPONENT_VARIANT_KEY]   = ARROW_BUTTON_VARIANT
+styleWrapper17[PATH_STYLE]              = Style17Path
+tertiaryStyles.push(styleWrapper17)
+
+const Style18Path = {}
+Style18Path[HIERARCHY_ATTRIBUTE]    = TERTIARY_OPTION
+Style18Path[SIZE_ATTRIBUTE]         = SMALL_OPTION
+Style18Path[COLOR_ATTRIBUTE]        = WHITE_OPTION
+Style18Path [STATE_ATTRIBUTE]       = NORMAL_OPTION
+Style18Path[ICON_ATTRIBUTE]         = ON_OPTION 
+
+const styleWrapper18 = {}
+styleWrapper18[STYLE_OBJECT]            = {...Style14}
+styleWrapper18[COMPONENT_VARIANT_KEY]   = ARROW_BUTTON_ICON_VARIANT
+styleWrapper18[PATH_STYLE]              = Style18Path
+tertiaryStyles.push(styleWrapper18)
+
+const Style19Path = {}
+Style19Path[HIERARCHY_ATTRIBUTE]    = TERTIARY_OPTION
+Style19Path[SIZE_ATTRIBUTE]         = SMALL_OPTION
+Style19Path[COLOR_ATTRIBUTE]        = WHITE_OPTION
+Style19Path [STATE_ATTRIBUTE]       = DISABLED_OPTION
+Style19Path[ICON_ATTRIBUTE]         = OFF_OPTION 
+
+const styleWrapper19 = {}
+styleWrapper19[STYLE_OBJECT]            = {...Style15}
+styleWrapper19[COMPONENT_VARIANT_KEY]   = ARROW_BUTTON_VARIANT
+styleWrapper19[PATH_STYLE]              = Style19Path
+tertiaryStyles.push(styleWrapper19)
+
+const Style20Path = {}
+Style20Path[HIERARCHY_ATTRIBUTE]    = TERTIARY_OPTION
+Style20Path[SIZE_ATTRIBUTE]         = SMALL_OPTION
+Style20Path[COLOR_ATTRIBUTE]        = WHITE_OPTION
+Style20Path [STATE_ATTRIBUTE]       = DISABLED_OPTION
+Style20Path[ICON_ATTRIBUTE]         = ON_OPTION 
+
+const styleWrapper20 = {}
+styleWrapper20[STYLE_OBJECT]            = {...Style16}
+styleWrapper20[COMPONENT_VARIANT_KEY]   = ARROW_BUTTON_ICON_VARIANT
+styleWrapper20[PATH_STYLE]              = Style20Path
+tertiaryStyles.push(styleWrapper20)
 export  {tertiaryStyles};

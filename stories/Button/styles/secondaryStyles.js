@@ -43,11 +43,13 @@ background: "transparent",
 border: "1px solid #190F14",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style1[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
+padding: "0px 16px",
 }
 Style1[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -87,10 +89,12 @@ background: "transparent",
 border: "1px solid #190F14",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style2[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
+padding: "0px 16px",
 }
 Style2[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -234,11 +238,13 @@ background: "transparent",
 border: "1px solid #190F14",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style5[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
+padding: "0px 16px",
 }
 Style5[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -278,10 +284,12 @@ background: "transparent",
 border: "1px solid #190F14",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style6[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
+padding: "0px 16px",
 }
 Style6[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -427,11 +435,13 @@ background: "transparent",
 border: "1px solid #190F14",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style9[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
+padding: "0px 16px",
 }
 Style9[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -471,10 +481,12 @@ background: "transparent",
 border: "1px solid #190F14",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style10[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
+padding: "0px 16px",
 }
 Style10[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -618,11 +630,13 @@ background: "#2E2A2B",
 border: "1px solid #ECE9E1",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style13[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
+padding: "0px 16px",
 }
 Style13[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -661,11 +675,13 @@ background: "#2E2A2B",
 border: "1px solid #ECE9E1",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style14[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
+padding: "0px 16px",
 }
 Style14[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -722,7 +738,7 @@ background: "#2E2A2B",
 border: "1px solid #6F696C",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
 
 }
 Style15[TEXT_SUBCOMPONENT] = {
@@ -823,11 +839,13 @@ background: "#2E2A2B",
 border: "1px solid #ECE9E1",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style17[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
+padding: "0px 16px",
 }
 Style17[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -866,10 +884,12 @@ background: "#2E2A2B",
 border: "1px solid #ECE9E1",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 }
 Style18[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
+padding: "0px 16px",
 }
 Style18[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1026,11 +1046,13 @@ background: "#2E2A2B",
 border: "1px solid #ECE9E1",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style21[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
+padding: "0px 16px",
 }
 Style21[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -1069,11 +1091,13 @@ background: "#2E2A2B",
 border: "1px solid #ECE9E1",
 borderRadius: "2px",
 boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 17px",
 
 }
 Style22[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
+padding: "0px 16px",
 }
 Style22[TEXT_SUBCOMPONENT] = {
 position: "static",

@@ -42,7 +42,9 @@ export const CHILDREN_DEFAULT_OPTION = "Call to action";
 //icon selection default value
 export const ICON_DEFAULT = "nothing"
 
-
+// VIEWPORTS CEIL DIMENSIONS 
+export const MAX_WIDTH_SMALL_OPTION = 764
+export const MAX_WIDTH_MEDIUM_OPTION = 1016
 
 
 const ATTRIBUTES = [];
@@ -53,7 +55,21 @@ ATTRIBUTES.push({
 })
 ATTRIBUTES.push({
     attributeName: SIZE_ATTRIBUTE,
-    defaultValue : null,
+    defaultValue : (() => {
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        if (vw < MAX_WIDTH_SMALL_OPTION)
+        {
+           return SMALL_OPTION;
+        }
+        else if (vw >= MAX_WIDTH_SMALL_OPTION && vw < MAX_WIDTH_MEDIUM_OPTION)
+        {
+           return MEDIUM_OPTION;
+        }
+        else if (vw >= MAX_WIDTH_MEDIUM_OPTION)
+        {
+           return LARGE_OPTION;
+        }
+    }) (),
     proccessValue: (value) => {return   value}
 
 })
