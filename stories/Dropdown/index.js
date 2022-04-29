@@ -39,3 +39,21 @@ class SeatDropdown extends HTMLElement {
 }
 if (customElements.get(NAME_OF_COMPONENT) === undefined) customElements.define(NAME_OF_COMPONENT, class extends SeatDropdown {});
 export const SEAT_DROPDOWN = NAME_OF_COMPONENT;
+export const CONTENT_TO_APPEND = 'Content to Append (using HTML tags)'
+export const createSeatDropdown = (props) => {
+    const dropdownElement = document.createElement(SEAT_DROPDOWN)
+
+    const parser = new DOMParser();
+	const doc = parser.parseFromString(props[CONTENT_TO_APPEND], 'text/html');
+    const children = [...doc.body.children]
+
+
+    dropdownElement.appendChild(children[0])
+
+    ATTRIBUTES.forEach((ATTRIBUTE)=> {
+      if (props.hasOwnProperty(ATTRIBUTE.attributeName)) dropdownElement.setAttribute(ATTRIBUTE.attributeName,props[ATTRIBUTE.attributeName])
+    })
+    
+        
+    return dropdownElement;
+}

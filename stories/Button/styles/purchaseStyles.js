@@ -1424,7 +1424,7 @@ height: "20px",
 display: "flex",
 justifyContent: "center",
 alignItems: "center",
-margin: "0px 0px 0px 8px",
+margin: "0px 8px 0px 0px",
 }
 Style28[ICON_SUBCOMPONENT] = {
 color: "#EEA786",
