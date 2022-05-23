@@ -2,7 +2,6 @@
 import {ICON_ATTRIBUTE,
   ICON_SELECTION_ATTRIBUTE,
   CHILDREN_ATTRIBUTE,
-  ONCLICK_ATTRIBUTE,
   SIZE_ATTRIBUTE
   } from "./constants.js"
 import {ON_OPTION,
@@ -53,7 +52,6 @@ connectedCallback() {
   
   const keysAttributes = {...attributes}
   delete keysAttributes[CHILDREN_ATTRIBUTE];
-  delete keysAttributes[ONCLICK_ATTRIBUTE];
   delete keysAttributes[ICON_SELECTION_ATTRIBUTE];
   if (attributes[ICON_SELECTION_ATTRIBUTE] === ICON_DEFAULT) keysAttributes[ICON_ATTRIBUTE] = OFF_OPTION
   else keysAttributes[ICON_ATTRIBUTE] = ON_OPTION
@@ -81,6 +79,7 @@ export const CONTENT_TO_APPEND = 'Content to Append (using HTML tags)'
 
 export const createSeatButton = (props) => {
  
+  console.log(props)
   const btn = document.createElement(SEAT_BUTTON);
   const parser = new DOMParser();
 	const doc = parser.parseFromString(props[CONTENT_TO_APPEND], 'text/html');

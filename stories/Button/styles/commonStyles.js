@@ -28,6 +28,7 @@ boxSizing: "border-box",
 border: "none",
 borderRadius: "2px",
 boxShadow: "none",
+cursor: "pointer",
 
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
@@ -41,6 +42,7 @@ maxWidth: "638px",
 overflow: "hidden",
 lineHeight: "20px",
 whiteSpace: "nowrap",
+userSelect: "none",
 }
 
 SIZE_STYLES[MEDIUM_OPTION] = {}
@@ -60,6 +62,7 @@ height: "40px",
 border: "none",
 borderRadius: "2px",
 boxShadow: "none",
+cursor: "pointer",
 }
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "12px 0px",
@@ -72,6 +75,7 @@ maxWidth: "919px",
 overflow: "hidden",
 lineHeight: "16px",
 whiteSpace: "nowrap",
+userSelect: "none",
 
 }
 
@@ -93,6 +97,7 @@ alignItems: "center",
 border: "none",
 borderRadius: "2px",
 boxShadow: "none",
+cursor: "pointer",
 }
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "8px 0px",
@@ -105,6 +110,7 @@ maxWidth: "699px",
 overflow: "hidden",
 lineHeight: "16px",
 whiteSpace: "nowrap",
+userSelect: "none",
 }
 
 //REGULAR BUTTON ICON VARIANT
@@ -125,6 +131,7 @@ alignItems: "center",
 border: "none",
 borderRadius: "2px",
 boxShadow: "none",
+cursor: "pointer",
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "14px 0px",
@@ -136,7 +143,8 @@ height: "20px",
 maxWidth: "614px",
 overflow: "hidden",
 lineHeight: "20px",
-whiteSpace: "nowrap"
+whiteSpace: "nowrap",
+userSelect: "none",
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT] = {
     padding: "12px 0px",
@@ -166,6 +174,7 @@ alignItems: "center",
 border: "none",
 borderRadius: "2px",
 boxShadow: "none",
+cursor: "pointer",
 }
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "12px 0px",
@@ -178,6 +187,7 @@ maxWidth: "899px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "16px",
+userSelect: "none",
 }
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT] = {
     padding: "8px 0px",
@@ -206,6 +216,7 @@ height: "32px",
 border: "none",
 borderRadius: "2px",
 boxShadow: "none", 
+cursor: "pointer",
 }
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "8px 0px",
@@ -218,6 +229,7 @@ maxWidth: "679px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "16px",
+userSelect: "none",
 }
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT] = {
     padding: "6px 0px",
@@ -257,6 +269,7 @@ maxWidth: "642px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "20px",
+userSelect: "none",
 }
 
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT] = {
@@ -295,6 +308,7 @@ maxWidth: "923px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "16px",
+userSelect: "none",
 }
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT] = {
     width: "20px",
@@ -321,6 +335,7 @@ maxWidth: "671px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "16px",
+userSelect: "none",
 }
 
 //ARROW BUTTON ICON VARIANT
@@ -351,6 +366,7 @@ maxWidth: "614px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "20px",
+userSelect: "none",
 }
 
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT] = {
@@ -402,6 +418,7 @@ maxWidth: "895px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "16px",
+userSelect: "none",
 }
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT] = {
     width: "20px",
@@ -436,5 +453,6 @@ maxWidth: "646px",
 overflow: "hidden",
 whiteSpace: "nowrap",
 lineHeight: "16px",
+userSelect: "none",
 }
 export  {SIZE_STYLES};

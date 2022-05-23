@@ -7,7 +7,7 @@ import {HIERARCHY_ATTRIBUTE,
         ICON_ATTRIBUTE,
         ICON_SELECTION_ATTRIBUTE,
         CHILDREN_ATTRIBUTE, 
-        ONCLICK_ATTRIBUTE } from "./Button/constants.js"
+        WIDTH_ATTRIBUTE } from "./Button/constants.js"
   
 import {PRIMARY_OPTION,
         LARGE_OPTION,
@@ -19,6 +19,8 @@ import {PRIMARY_OPTION,
         DISABLED_OPTION,
         ON_OPTION,
         OFF_OPTION,
+        FIT_CONTENT_OPTION,
+        FULL_OPTION,
         CHILDREN_DEFAULT_OPTION,
         HOVER_OPTION} from "./Button/constants.js"
 import { ATTRIBUTES } from "./Button/constants.js"
@@ -34,6 +36,10 @@ argOpt[HIERARCHY_ATTRIBUTE] = {
 argOpt[SIZE_ATTRIBUTE] = {
   control: { type: 'select' },
   options: [LARGE_OPTION, MEDIUM_OPTION, SMALL_OPTION],
+}
+argOpt[WIDTH_ATTRIBUTE] = {
+  control: { type: 'select' },
+  options: [FULL_OPTION, FIT_CONTENT_OPTION],
 }
 argOpt[COLOR_ATTRIBUTE] = {
   control: { type: 'select' },
@@ -61,17 +67,21 @@ export default {
 var defaultArgs = {}
 defaultArgs[HIERARCHY_ATTRIBUTE] = PRIMARY_OPTION
 defaultArgs[SIZE_ATTRIBUTE] = LARGE_OPTION
+defaultArgs[WIDTH_ATTRIBUTE] = FULL_OPTION
 defaultArgs[COLOR_ATTRIBUTE] = BLACK_OPTION
 defaultArgs[STATE_ATTRIBUTE] = NORMAL_OPTION
 defaultArgs[CONTENT_TO_APPEND] = `<button  onclick="alert('Hi!')">Click Me!</button>`
+
 const Template = ({...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
 if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
+if (!args.hasOwnProperty(WIDTH_ATTRIBUTE)) args[WIDTH_ATTRIBUTE] = defaultArgs[WIDTH_ATTRIBUTE]
 if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
 if (!args.hasOwnProperty(COLOR_ATTRIBUTE)) args[COLOR_ATTRIBUTE] = defaultArgs[COLOR_ATTRIBUTE]
 if (!args.hasOwnProperty(CONTENT_TO_APPEND)) args[CONTENT_TO_APPEND] = defaultArgs[CONTENT_TO_APPEND]
+
   return createSeatButton({ ...args });
 };
 

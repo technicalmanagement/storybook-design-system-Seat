@@ -3,15 +3,18 @@ import {HIERARCHY_ATTRIBUTE,
     COLOR_ATTRIBUTE,
     LINE_ATTRIBUTE,
     ICON_ATTRIBUTE,
-    SMALL_OPTION} from "../constants.js"
+    WIDTH_ATTRIBUTE} from "../constants.js"
 import {HYPERLINK_OPTION,
     LARGE_OPTION,
     MEDIUM_OPTION,
+    SMALL_OPTION,
     BLACK_OPTION,
     WHITE_OPTION,
     TITLE_OPTION,
     PARAGRAPH_OPTION,
-    OFF_OPTION} from "../constants.js"
+    OFF_OPTION,
+    FIT_CONTENT_OPTION,
+    FULL_OPTION} from "../constants.js"
 import {BUTTON_SUBCOMPONENT,
         TEXT_SUBCOMPONENT } from "../constants.js"
 import {HOVER_BUTTON_EVENT} from "../constants.js"
@@ -33,6 +36,7 @@ Style1 [BUTTON_SUBCOMPONENT] = {
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
 }
+delete Style1[BUTTON_SUBCOMPONENT].minWidth
 Style1[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
@@ -40,6 +44,7 @@ Style1[TEXT_SUBCOMPONENT] = {
     color: "#190F14",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
     fontWeight: "400",
+    padding: "0px",
 
 }
 
@@ -49,6 +54,7 @@ Style1Path[SIZE_ATTRIBUTE] = LARGE_OPTION
 Style1Path[COLOR_ATTRIBUTE] = BLACK_OPTION
 Style1Path [LINE_ATTRIBUTE] = TITLE_OPTION
 Style1Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style1Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper1 = {}
 styleWrapper1[STYLE_OBJECT] = {...Style1}
@@ -70,12 +76,14 @@ Style2 [BUTTON_SUBCOMPONENT] = {
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
 }
+delete Style2[BUTTON_SUBCOMPONENT].minWidth
 Style2[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style2[TEXT_SUBCOMPONENT] = {    
     color: "#190F14",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     height: "24px",
     lineHeight: "24px",
     fontWeight: "400",
@@ -87,6 +95,7 @@ Style2Path[SIZE_ATTRIBUTE] = LARGE_OPTION
 Style2Path[COLOR_ATTRIBUTE] = BLACK_OPTION
 Style2Path [LINE_ATTRIBUTE] = PARAGRAPH_OPTION
 Style2Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style2Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper2 = {}
 styleWrapper2[STYLE_OBJECT] = {...Style2}
@@ -108,12 +117,14 @@ Style3 [BUTTON_SUBCOMPONENT] = {
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1",
 }
+delete Style3[BUTTON_SUBCOMPONENT].minWidth
 Style3[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style3[TEXT_SUBCOMPONENT] = {
     color: "#ECE9E1",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     fontWeight: "400",
 
 }
@@ -124,6 +135,7 @@ Style3Path[SIZE_ATTRIBUTE] = LARGE_OPTION
 Style3Path[COLOR_ATTRIBUTE] = WHITE_OPTION
 Style3Path [LINE_ATTRIBUTE] = TITLE_OPTION
 Style3Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style3Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper3 = {}
 styleWrapper3[STYLE_OBJECT] = {...Style3}
@@ -138,18 +150,21 @@ Style4 [BUTTON_SUBCOMPONENT] = {
     background: "transparent",
     margin: "0px",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
     height: "26px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1",
 }
+delete Style4[BUTTON_SUBCOMPONENT].minWidth
 Style4[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style4[TEXT_SUBCOMPONENT] = {
     color: "#ECE9E1",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     height: "24px",
     lineHeight: "24px",
     fontWeight: "400",
@@ -162,6 +177,7 @@ Style4Path[SIZE_ATTRIBUTE] = LARGE_OPTION
 Style4Path[COLOR_ATTRIBUTE] = WHITE_OPTION
 Style4Path [LINE_ATTRIBUTE] = PARAGRAPH_OPTION
 Style4Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style4Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper4 = {}
 styleWrapper4[STYLE_OBJECT] = {...Style4}
@@ -183,12 +199,14 @@ Style5 [BUTTON_SUBCOMPONENT] = {
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
 }
+delete Style5[BUTTON_SUBCOMPONENT].minWidth
 Style5[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style5[TEXT_SUBCOMPONENT] = {
     color: "#190F14",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     fontWeight: "400",
 }
 
@@ -198,6 +216,7 @@ Style5Path[SIZE_ATTRIBUTE] = MEDIUM_OPTION
 Style5Path[COLOR_ATTRIBUTE] = BLACK_OPTION
 Style5Path [LINE_ATTRIBUTE] = TITLE_OPTION
 Style5Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style5Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper5 = {}
 styleWrapper5[STYLE_OBJECT] = {...Style5}
@@ -218,12 +237,14 @@ Style6 [BUTTON_SUBCOMPONENT] = {
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
 }
+delete Style6[BUTTON_SUBCOMPONENT].minWidth
 Style6[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style6[TEXT_SUBCOMPONENT] = {
     color: "#190F14",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     height: "20px",
     fontWeight: "400",
     lineHeight: "20px",
@@ -235,6 +256,7 @@ Style6Path[SIZE_ATTRIBUTE] = MEDIUM_OPTION
 Style6Path[COLOR_ATTRIBUTE] = BLACK_OPTION
 Style6Path [LINE_ATTRIBUTE] = PARAGRAPH_OPTION
 Style6Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style6Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper6 = {}
 styleWrapper6[STYLE_OBJECT] = {...Style6}
@@ -256,12 +278,14 @@ Style7 [BUTTON_SUBCOMPONENT] = {
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1",
 }
+delete Style7[BUTTON_SUBCOMPONENT].minWidth
 Style7[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style7[TEXT_SUBCOMPONENT] = {
     color: "#ECE9E1",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     fontWeight: "400",
 }
 
@@ -271,6 +295,7 @@ Style7Path[SIZE_ATTRIBUTE] = MEDIUM_OPTION
 Style7Path[COLOR_ATTRIBUTE] = WHITE_OPTION
 Style7Path [LINE_ATTRIBUTE] = TITLE_OPTION
 Style7Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style7Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper7 = {}
 styleWrapper7[STYLE_OBJECT] = {...Style7}
@@ -291,12 +316,14 @@ Style8 [BUTTON_SUBCOMPONENT] = {
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1", 
 }
+delete Style8[BUTTON_SUBCOMPONENT].minWidth
 Style8[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style8[TEXT_SUBCOMPONENT] = {
     color: "#ECE9E1",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    padding: "0px",
     height: "20px",
     lineHeight: "20px",
     fontWeight: "400",
@@ -308,6 +335,7 @@ Style8Path[SIZE_ATTRIBUTE] = MEDIUM_OPTION
 Style8Path[COLOR_ATTRIBUTE] = WHITE_OPTION
 Style8Path [LINE_ATTRIBUTE] = PARAGRAPH_OPTION
 Style8Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style8Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper8 = {}
 styleWrapper8[STYLE_OBJECT]             = {...Style8}
@@ -322,6 +350,7 @@ Style9Path[SIZE_ATTRIBUTE]      = SMALL_OPTION
 Style9Path[COLOR_ATTRIBUTE]     = BLACK_OPTION
 Style9Path [LINE_ATTRIBUTE]     = TITLE_OPTION
 Style9Path [ICON_ATTRIBUTE]     = OFF_OPTION
+Style9Path [WIDTH_ATTRIBUTE]    = FIT_CONTENT_OPTION
 
 const styleWrapper9 = {}
 styleWrapper9[STYLE_OBJECT]             = {...Style5}
@@ -335,6 +364,7 @@ Style10Path[SIZE_ATTRIBUTE]         = SMALL_OPTION
 Style10Path[COLOR_ATTRIBUTE]        = BLACK_OPTION
 Style10Path [LINE_ATTRIBUTE]        = PARAGRAPH_OPTION
 Style10Path [ICON_ATTRIBUTE]        = OFF_OPTION
+Style10Path [WIDTH_ATTRIBUTE]       = FIT_CONTENT_OPTION
 
 const styleWrapper10 = {}
 styleWrapper10[STYLE_OBJECT]            = {...Style6}
@@ -348,7 +378,7 @@ Style11Path[SIZE_ATTRIBUTE] = SMALL_OPTION
 Style11Path[COLOR_ATTRIBUTE] = WHITE_OPTION
 Style11Path [LINE_ATTRIBUTE] = TITLE_OPTION
 Style11Path [ICON_ATTRIBUTE] = OFF_OPTION
-
+Style11Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 const styleWrapper11 = {}
 styleWrapper11[STYLE_OBJECT] = {...Style7}
 styleWrapper11[COMPONENT_VARIANT_KEY] = REGULAR_BUTTON_VARIANT
@@ -361,11 +391,19 @@ Style12Path[SIZE_ATTRIBUTE] = SMALL_OPTION
 Style12Path[COLOR_ATTRIBUTE] = WHITE_OPTION
 Style12Path [LINE_ATTRIBUTE] = PARAGRAPH_OPTION
 Style12Path [ICON_ATTRIBUTE] = OFF_OPTION
+Style12Path [WIDTH_ATTRIBUTE] = FIT_CONTENT_OPTION
 
 const styleWrapper12 = {}
 styleWrapper12[STYLE_OBJECT] = {...Style8}
 styleWrapper12[COMPONENT_VARIANT_KEY] = REGULAR_BUTTON_VARIANT
 styleWrapper12[PATH_STYLE] = Style12Path
 hyperlinkStyles.push(styleWrapper12)
+
+const copyHyperlinkStyles = []
+hyperlinkStyles.forEach((style,index) => {
+    copyHyperlinkStyles.push(JSON.parse(JSON.stringify(style)))
+    copyHyperlinkStyles[index][PATH_STYLE][WIDTH_ATTRIBUTE] = FULL_OPTION
+})
+hyperlinkStyles.push(...copyHyperlinkStyles)
 
 export {hyperlinkStyles}

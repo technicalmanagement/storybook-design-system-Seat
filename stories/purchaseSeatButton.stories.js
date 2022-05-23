@@ -7,7 +7,7 @@ import {HIERARCHY_ATTRIBUTE,
     ICON_ATTRIBUTE,
     ICON_SELECTION_ATTRIBUTE,
     CHILDREN_ATTRIBUTE, 
-    ONCLICK_ATTRIBUTE } from "./Button/constants.js"
+    WIDTH_ATTRIBUTE } from "./Button/constants.js"
 
 import {PURCHASE_OPTION,
     PRIMARY_PURCHASE_HIERARCHY_OPTION,
@@ -21,6 +21,8 @@ import {PURCHASE_OPTION,
     HOVER_OPTION,
     ON_OPTION,
     OFF_OPTION,
+    FIT_CONTENT_OPTION,
+    FULL_OPTION,
     CHILDREN_DEFAULT_OPTION} from "./Button/constants.js"
 import { createSeatButton,CONTENT_TO_APPEND } from './index.js';
 import Icons from "./Icons/allIcons.js"
@@ -35,6 +37,10 @@ argOpt[SIZE_ATTRIBUTE] = {
 control: { type: 'select' },
 options: [LARGE_OPTION, MEDIUM_OPTION, SMALL_OPTION],
 }
+argOpt[WIDTH_ATTRIBUTE] = {
+    control: { type: 'select' },
+    options: [FULL_OPTION, FIT_CONTENT_OPTION],
+  }
 argOpt[PURCHASE_HIERARCHY_ATTRIBUTE] = {
 control: { type: 'select' },
 options: [PRIMARY_PURCHASE_HIERARCHY_OPTION, SECONDARY_PURCHASE_HIERARCHY_OPTION, TERTIARY_PURCHASE_HIERARCHY_OPTION],
@@ -60,6 +66,7 @@ argTypes: {...argOpt}
 var defaultArgs = {}
 defaultArgs[HIERARCHY_ATTRIBUTE] = PURCHASE_OPTION
 defaultArgs[SIZE_ATTRIBUTE] = LARGE_OPTION
+defaultArgs[WIDTH_ATTRIBUTE] = FULL_OPTION
 defaultArgs[PURCHASE_HIERARCHY_ATTRIBUTE] = PRIMARY_PURCHASE_HIERARCHY_OPTION
 defaultArgs[STATE_ATTRIBUTE] = NORMAL_OPTION
 defaultArgs[CONTENT_TO_APPEND] = `<button  onclick="alert('Hi!')">Click Me!</button>`
@@ -68,6 +75,7 @@ const Template = ({...args }) => {
 // return `<div>${label}</div>`;
 if (!args.hasOwnProperty(HIERARCHY_ATTRIBUTE)) args[HIERARCHY_ATTRIBUTE] = defaultArgs[HIERARCHY_ATTRIBUTE]
 if (!args.hasOwnProperty(SIZE_ATTRIBUTE)) args[SIZE_ATTRIBUTE] = defaultArgs[SIZE_ATTRIBUTE]
+if (!args.hasOwnProperty(WIDTH_ATTRIBUTE)) args[WIDTH_ATTRIBUTE] = defaultArgs[WIDTH_ATTRIBUTE]
 if (!args.hasOwnProperty(STATE_ATTRIBUTE)) args[STATE_ATTRIBUTE] = defaultArgs[STATE_ATTRIBUTE]
 if (!args.hasOwnProperty(PURCHASE_HIERARCHY_ATTRIBUTE)) args[PURCHASE_HIERARCHY_ATTRIBUTE] = defaultArgs[PURCHASE_HIERARCHY_ATTRIBUTE]
 if (!args.hasOwnProperty(CONTENT_TO_APPEND)) args[CONTENT_TO_APPEND] = defaultArgs[CONTENT_TO_APPEND]
