@@ -24,6 +24,8 @@ export const regularIconFunction = function (attributes)
 
     svgElem.appendChild(g);
     g.appendChild(path);
+    svgElem.style.display ="flex"
+    svgElem.style.alignItems = "center"
     return svgElem;
 }
 

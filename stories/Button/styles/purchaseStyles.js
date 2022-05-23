@@ -39,15 +39,7 @@ const Style1 = {}
 Style1 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#EA5D1A",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1.0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 
@@ -56,11 +48,6 @@ Style1[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 opacity: "0.8"
 }
 Style1[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#ECE9E1",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -85,15 +72,7 @@ const Style2 = {}
 Style2 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#EA5D1A",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1.0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
@@ -102,21 +81,12 @@ Style2[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 opacity: "0.8"
 }
 Style2[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#ECE9E1",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style2[ICON_CONTAINER_SUBCOMPONENT] = {
 color: "#ECE9E1",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style2[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -139,24 +109,10 @@ purchaseStyles.push(styleWrapper2)
 //* PRIMARY DESKTOP BLACK DISABLED OFFICON *//
 const Style3 = {}
 Style3 [BUTTON_SUBCOMPONENT] = {
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#EEA786",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style3[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#ECE9E1",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -179,35 +135,17 @@ const Style4 = {}
 Style4 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#EEA786",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
 Style4[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#ECE9E1",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style4[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style4[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -233,15 +171,7 @@ const Style5 = {}
 Style5 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "#EA5D1A",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 
@@ -250,11 +180,6 @@ Style5[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 opacity: "0.8"
 }
 Style5[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -278,15 +203,7 @@ const Style6 = {}
 
 Style6 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "40px", 
 background: "#EA5D1A",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 }
@@ -294,22 +211,12 @@ Style6[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 opacity: "0.8"
 }
 Style6[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
-
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style6[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style6[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -333,16 +240,7 @@ purchaseStyles.push(styleWrapper6)
 const Style7 = {}
 Style7 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "#EEA786",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style7[TEXT_SUBCOMPONENT] = {
@@ -373,35 +271,17 @@ const Style8 = {}
 Style8 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "40px", 
 background: "#EEA786",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
 Style8[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style8[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style8[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -427,17 +307,8 @@ purchaseStyles.push(styleWrapper8)
 //* SECONDARY SMALL BLACK NORMAL OFFICON *//
 const Style9 = {}
 Style9 [BUTTON_SUBCOMPONENT] = {
-
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "30px", 
 background: "#EA5D1A",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
@@ -445,11 +316,6 @@ Style9[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 opacity: "0.8"
 }
 Style9[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -473,15 +339,7 @@ const Style10 = {}
 
 Style10 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "#EA5D1A",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 }
@@ -489,21 +347,12 @@ Style10[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 opacity: "0.8"
 }
 Style10[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style10[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style10[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -527,24 +376,10 @@ purchaseStyles.push(styleWrapper10)
 const Style11 = {}
 Style11 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "30px", 
 background: "#EEA786",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style11[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -567,35 +402,17 @@ const Style12 = {}
 Style12 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "#EEA786",
-border: "none",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
 Style12[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style12[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style12[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -621,30 +438,18 @@ const Style13 = {}
 Style13 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
-border: "1px solid #EA5D1A",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1.0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #EA5D1A",
 
 }
 Style13[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style13[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EA5D1A",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -669,41 +474,24 @@ const Style14 = {}
 Style14 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
-border: "1px solid #EA5D1A",
-borderRadius: "2px",
-boxShadow: "none",
-boxSizing: "border-box",
 opacity: "1.0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #EA5D1A",
 
 }
 Style14[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
-padding: "0px 16px",
+padding: "0px 14px",
 border: "2px solid #EA5D1A",
 }
 Style14[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EA5D1A",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style14[ICON_CONTAINER_SUBCOMPONENT] = {
 color: "#EA5D1A",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style14[ICON_SUBCOMPONENT] = {
 color: "#EA5D1A",
@@ -726,24 +514,12 @@ purchaseStyles.push(styleWrapper14)
 //* SECONDARY DESKTOP BLACK DISABLED OFFICON *//
 const Style15 = {}
 Style15 [BUTTON_SUBCOMPONENT] = {
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #EEA786",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style15[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EEA786",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -766,35 +542,19 @@ const Style16 = {}
 Style16 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #EEA786",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
 Style16[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EEA786",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style16[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#EEA786",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style16[ICON_SUBCOMPONENT] = {
 color: "#EEA786",
@@ -820,24 +580,16 @@ const Style17 = {}
 Style17 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-width: "230px",
-height: "38px", 
 background: "transparent",
-border: "1px solid #EA5D1A",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #EA5D1A",
 
 }
 Style17[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style17[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -868,39 +620,23 @@ const Style18 = {}
 
 Style18 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "40px", 
 background: "transparent",
-border: "1px solid #EA5D1A",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #EA5D1A",
 }
 Style18[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style18[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EA5D1A",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style18[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#EA5D1A",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style18[ICON_SUBCOMPONENT] = {
 color: "#EA5D1A",
@@ -924,17 +660,11 @@ purchaseStyles.push(styleWrapper18)
 const Style19 = {}
 Style19 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "transparent",
+
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #EEA786",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style19[TEXT_SUBCOMPONENT] = {
 position: "static",
@@ -964,37 +694,21 @@ const Style20 = {}
 Style20 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "40px", 
 background: "transparent",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #EEA786",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
 Style20[TEXT_SUBCOMPONENT] = 
 {
-    position        : "static",
-    fontFamily      : "SEATBCN",
-    fontStyle       : "normal",
-    fontWeight      : "bold",
-    fontSize        : "14px",
     color           : "#EEA786",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style20[ICON_CONTAINER_SUBCOMPONENT] = 
 {
     color           : "#EEA786",
-    width           : "24px",
-    height          : "24px",
-    display         : "flex",
-    justifyContent  : "center",
-    alignItems      : "center",
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style20[ICON_SUBCOMPONENT] = 
 {
@@ -1023,29 +737,17 @@ const Style21 = {}
 Style21 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "30px", 
 background: "transparent",
-border: "1px solid #EA5D1A",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #EA5D1A",
 }
 Style21[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style21[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EA5D1A",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -1069,39 +771,23 @@ const Style22 = {}
 
 Style22 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "transparent",
-border: "1px solid #EA5D1A",
-borderRadius: "2px",
-boxShadow: "none",
 opacity: "1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #EA5D1A",
 }
 Style22[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #EA5D1A",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style22[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EA5D1A",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style22[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style22[ICON_SUBCOMPONENT] = {
 color: "#EA5D1A",
@@ -1125,24 +811,12 @@ purchaseStyles.push(styleWrapper22)
 const Style23 = {}
 Style23 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "30px", 
 background: "transparent",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #EEA786",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style23[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EEA786",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -1165,35 +839,19 @@ const Style24 = {}
 Style24 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "transparent",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #EEA786",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
 }
 Style24[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EEA786",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style24[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style24[ICON_SUBCOMPONENT] = {
 color: "#EEA786",
@@ -1218,24 +876,9 @@ purchaseStyles.push(styleWrapper24)
 const Style25 = {}
 Style25 [BUTTON_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-paddingRight: "22px",
-}
-Style25[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
-paddingRight: "16px",
 }
 Style25[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EA5D1A",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -1247,12 +890,7 @@ color: '#EEA786',
 Style25[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition:     "0.5s all ease-in-out",
 color:          "#EA5D1A",
-width:          "20px",
-height:         "20px",
-display:        "flex",
-justifyContent: "center",
-alignItems:     "center",
-margin:         "0px 0px 0px 2px",
+...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT]
 
 }
 Style25[ICONARROW_CONTAINER_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
@@ -1285,24 +923,9 @@ const Style26 = {}
 Style26 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-paddingRight: "22px",
-}
-Style26[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
-paddingRight: "16px",
 }
 Style26[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EA5D1A",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT],
 }
@@ -1310,14 +933,8 @@ Style26[TEXT_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 color: '#EEA786',
 }
 Style26[ICON_CONTAINER_SUBCOMPONENT] ={
-transition: "0.5s all ease-in-out",
 color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 8px 0px 0px",
+...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style26[ICON_SUBCOMPONENT] = {
 color: "#EA5D1A",
@@ -1331,12 +948,7 @@ color: '#EEA786',
 Style26[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
+...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT]
 }
 Style26[ICONARROW_CONTAINER_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 margin: "0px 0px 0px 8px",
@@ -1366,33 +978,17 @@ const Style27 = {}
 Style27 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
 }
 Style27[TEXT_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EEA786",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
 }
 Style27[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
+...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT]
 
 }
 Style27[ICONARROW_SUBCOMPONENT] = {
@@ -1418,35 +1014,19 @@ const Style28 = {}
 Style28 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
 }
 
 Style28[TEXT_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#EEA786",
 ...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT],
 }
 
 Style28[ICON_CONTAINER_SUBCOMPONENT] ={
-transition: "0.5s all ease-in-out",
+
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 8px 0px 0px",
+...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style28[ICON_SUBCOMPONENT] = {
 color: "#EEA786",
@@ -1456,12 +1036,7 @@ height: "11.25px",
 Style28[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 8px",
+...SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT]
 }
 
 Style28[ICONARROW_SUBCOMPONENT] = {
@@ -1488,24 +1063,10 @@ const Style29 = {}
 Style29 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-paddingRight: "22px",
 }
-Style29[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
-paddingRight: "16px",
-}
+
 Style29[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EA5D1A",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -1515,13 +1076,7 @@ color: '#EEA786',
 Style29[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
-
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT],
 }
 Style29[ICONARROW_CONTAINER_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 margin: "0px 0px 0px 8px",
@@ -1552,24 +1107,9 @@ const Style30 = {}
 Style30 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-paddingRight: "22px",
-}
-Style30[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
-paddingRight: "16px",
 }
 Style30[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EA5D1A",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -1579,12 +1119,7 @@ color: '#EEA786',
 Style30[ICON_CONTAINER_SUBCOMPONENT] ={
 transition: "0.5s all ease-in-out",
 color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 8px 0px 0px",
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style30[ICON_SUBCOMPONENT] = {
 color: "#EA5D1A",
@@ -1597,12 +1132,7 @@ color: '#EEA786',
 Style30[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EA5D1A",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT],
 }
 Style30[ICONARROW_CONTAINER_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 margin: "0px 0px 0px 8px",
@@ -1633,34 +1163,17 @@ const Style31 = {}
 Style31 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style31[TEXT_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EEA786",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style31[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
-
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT],
 }
 Style31[ICONARROW_SUBCOMPONENT] = {
 color: "#EEA786",
@@ -1683,37 +1196,19 @@ purchaseStyles.push(styleWrapper31)
 
 const Style32 = {}
 Style32 [BUTTON_SUBCOMPONENT] = {
-
 transition: "0.5s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-alignItems: "center",
-height: "20px", 
-background: "transparent",
-border: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 
 Style32[TEXT_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#EEA786",
 ...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 
 Style32[ICON_CONTAINER_SUBCOMPONENT] ={
-transition: "0.5s all ease-in-out",
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 8px 0px 0px"
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style32[ICON_SUBCOMPONENT] = {
 color: "#EEA786",
@@ -1723,12 +1218,7 @@ height: "11.25px",
 Style32[ICONARROW_CONTAINER_SUBCOMPONENT] = {
 transition: "0.5s all ease-in-out",
 color: "#EEA786",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-margin: "0px 0px 0px 2px",
+...SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][ICONARROW_CONTAINER_SUBCOMPONENT],
 }
 
 Style32[ICONARROW_SUBCOMPONENT] = {

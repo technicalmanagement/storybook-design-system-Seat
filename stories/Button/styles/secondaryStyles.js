@@ -34,29 +34,16 @@ const Style1 = {}
 Style1 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "46px", 
 background: "transparent",
-border: "1px solid #190F14",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
-
+padding: "0px 15px",
+border: "1px solid #190F14",
 }
 Style1[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style1[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#190F14",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -81,37 +68,22 @@ const Style2 = {}
 Style2 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
 boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
-border: "1px solid #190F14",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #190F14",
 }
 Style2[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style2[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#190F14",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style2[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#190F14",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style2[ICON_SUBCOMPONENT] = {
 color: "#190F14",
@@ -135,24 +107,12 @@ secondaryStyles.push(styleWrapper2)
 const Style3 = {}
 Style3 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #D1CFD0",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style3[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#D1CFD0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -175,35 +135,18 @@ const Style4 = {}
 Style4 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "transparent",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #D1CFD0",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style4[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#D1CFD0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style4[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#D1CFD0",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style4[ICON_SUBCOMPONENT] = {
 color: "#D1CFD0",
@@ -229,29 +172,16 @@ const Style5 = {}
 Style5 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "transparent",
-border: "1px solid #190F14",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
-
+padding: "0px 15px",
+border: "1px solid #190F14",
 }
 Style5[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style5[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#190F14",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -275,38 +205,22 @@ const Style6 = {}
 
 Style6 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "40px", 
 background: "transparent",
-border: "1px solid #190F14",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #190F14",
 }
 Style6[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style6[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#190F14",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style6[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#190F14",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style6[ICON_SUBCOMPONENT] = {
 color: "#190F14",
@@ -330,24 +244,12 @@ secondaryStyles.push(styleWrapper6)
 const Style7 = {}
 Style7 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "transparent",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #D1CFD0",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style7[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -370,35 +272,18 @@ const Style8 = {}
 Style8 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "40px", 
 background: "transparent",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #D1CFD0",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style8[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style8[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#D1CFD0",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style8[ICON_SUBCOMPONENT] = {
 color: "#D1CFD0",
@@ -426,29 +311,17 @@ const Style9 = {}
 Style9 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "30px", 
 background: "transparent",
-border: "1px solid #190F14",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #190F14",
 
 }
 Style9[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style9[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#190F14",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -472,38 +345,22 @@ const Style10 = {}
 
 Style10 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "transparent",
-border: "1px solid #190F14",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #190F14",
 }
 Style10[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #190F14",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style10[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#190F14",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style10[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#190F14",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style10[ICON_SUBCOMPONENT] = {
 color: "#190F14",
@@ -527,24 +384,12 @@ secondaryStyles.push(styleWrapper10)
 const Style11 = {}
 Style11 [BUTTON_SUBCOMPONENT] = {
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "30px", 
 background: "transparent",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #D1CFD0",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style11[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -567,35 +412,18 @@ const Style12 = {}
 Style12 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "transparent",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #D1CFD0",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style12[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style12[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#D1CFD0",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style12[ICON_SUBCOMPONENT] = {
 color: "#D1CFD0",
@@ -621,29 +449,17 @@ const Style13 = {}
 Style13 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "46px", 
 background: "#2E2A2B",
-border: "1px solid #ECE9E1",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #ECE9E1",
 
 }
 Style13[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style13[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#ECE9E1",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -666,39 +482,22 @@ const Style14 = {}
 Style14 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#2E2A2B",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #ECE9E1",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
-
 }
 Style14[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style14[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#ECE9E1",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style14[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style14[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -726,27 +525,14 @@ const Style15 = {}
 /* Interactive/02 Secondary/01 Enabled */
 
 Style15 [BUTTON_SUBCOMPONENT] = {
-
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#2E2A2B",
-border: "1px solid #6F696C",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
+border: "1px solid #6F696C",
 
 }
 Style15[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#D1CFD0",
 opacity: "0.4",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
@@ -771,36 +557,19 @@ const Style16 = {}
 Style16 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "48px", 
 background: "#2E2A2B",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #6F696C",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style16[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "16px",
 color: "#D1CFD0",
 ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style16[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#D1CFD0",
 opacity: "0.4",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style16[ICON_SUBCOMPONENT] = {
 color: "#D1CFD0",
@@ -830,29 +599,16 @@ const Style17 = {}
 Style17 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "#2E2A2B",
-border: "1px solid #ECE9E1",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
-
+padding: "0px 15px",
+border: "1px solid #ECE9E1",
 }
 Style17[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style17[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -875,38 +631,22 @@ const Style18 = {}
 Style18 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "#2E2A2B",
-border: "1px solid #ECE9E1",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
+padding: "0px 15px",
+border: "1px solid #ECE9E1",
 }
 Style18[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style18[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style18[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style18[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -936,25 +676,12 @@ const Style19 = {}
 Style19 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "#2E2A2B",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #6F696C",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style19[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 opacity: "0.4",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
@@ -980,36 +707,19 @@ const Style20 = {}
 Style20 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "38px", 
 background: "#2E2A2B",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #6F696C",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style20[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style20[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#D1CFD0",
 opacity: "0.4",
-width: "24px",
-height: "24px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style20[ICON_SUBCOMPONENT] = {
 color: "#D1CFD0",
@@ -1037,29 +747,16 @@ const Style21 = {}
 Style21 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-boxShadow: "inset 0 0 0 2px transparent",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "#2E2A2B",
-border: "1px solid #ECE9E1",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
-
+padding: "0px 15px",
+border: "1px solid #ECE9E1",
 }
 Style21[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style21[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
 }
@@ -1082,39 +779,21 @@ const Style22 = {}
 Style22 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
-background: "#2E2A2B",
-border: "1px solid #ECE9E1",
-borderRadius: "2px",
-boxShadow: "none",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
-padding: "0px 17px",
-
+padding: "0px 15px",
+border: "1px solid #ECE9E1",
 }
 Style22[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
 border: "2px solid #ECE9E1",
-padding: "0px 16px",
+padding: "0px 14px",
 }
 Style22[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#ECE9E1",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style22[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#ECE9E1",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style22[ICON_SUBCOMPONENT] = {
 color: "#ECE9E1",
@@ -1144,25 +823,12 @@ const Style23 = {}
 Style23 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "#2E2A2B",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
 border: "1px solid #6F696C",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
-
 }
 Style23[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 opacity: "0.4",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
@@ -1187,36 +853,20 @@ const Style24 = {}
 Style24 [BUTTON_SUBCOMPONENT] = {
 
 transition: "0.1s all ease-in-out",
-position: "relative",
-display: "flex",
-flexDirection: "row",
-justifyContent: "center",
-alignItems: "center",
-height: "32px", 
 background: "#2E2A2B",
-border: "1px solid #6F696C",
-borderRadius: "2px",
-boxShadow: "none",
-...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT]
 
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][BUTTON_SUBCOMPONENT],
+padding: "0px 15px",
+border: "1px solid #6F696C",
 }
 Style24[TEXT_SUBCOMPONENT] = {
-position: "static",
-fontFamily: "SEATBCN",
-fontStyle: "normal",
-fontWeight: "bold",
-fontSize: "14px",
 color: "#D1CFD0",
 ...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT]
 }
 Style24[ICON_CONTAINER_SUBCOMPONENT] ={
 color: "#D1CFD0",
 opacity: "0.4",
-width: "20px",
-height: "20px",
-display: "flex",
-justifyContent: "center",
-alignItems: "center",
+...SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][ICON_CONTAINER_SUBCOMPONENT],
 }
 Style24[ICON_SUBCOMPONENT] = {
 color: "#D1CFD0",

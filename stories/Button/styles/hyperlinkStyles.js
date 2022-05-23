@@ -22,30 +22,24 @@ const hyperlinkStyles = []
 
 const Style1 = {}
 Style1 [BUTTON_SUBCOMPONENT] = {
+    
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
+    height: "21px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "21px", 
-    background: "transparent",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style1[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style1[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "16px",
     color: "#190F14",
-    lineHeight: "20px",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    fontWeight: "400",
 
 }
 
@@ -64,35 +58,27 @@ hyperlinkStyles.push(styleWrapper1)
 
 const Style2 = {}
 Style2 [BUTTON_SUBCOMPONENT] = {
+    
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    height: "26px",
+    padding: "0px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-    height: "25px",
 }
 Style2[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
-Style2[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "16px",
+Style2[TEXT_SUBCOMPONENT] = {    
     color: "#190F14",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
     height: "24px",
-    lineHeight: "24px"
-    
-
-
+    lineHeight: "24px",
+    fontWeight: "400",
 }
 
 const Style2Path = {}
@@ -110,31 +96,25 @@ hyperlinkStyles.push(styleWrapper2)
 
 const Style3 = {}
 Style3 [BUTTON_SUBCOMPONENT] = {
+    
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
+    height: "21px", 
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "21px", 
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style3[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style3[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "16px",
     color: "#ECE9E1",
-    lineHeight: "20px",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    fontWeight: "400",
 
 }
 
@@ -153,33 +133,26 @@ hyperlinkStyles.push(styleWrapper3)
 
 const Style4 = {}
 Style4 [BUTTON_SUBCOMPONENT] = {
+    
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    height: "26px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "21px", 
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
-    height: "25px",
 }
 Style4[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style4[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "16px",
     color: "#ECE9E1",
     ...SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
     height: "24px",
-    lineHeight: "24px"
+    lineHeight: "24px",
+    fontWeight: "400",
 
 }
 
@@ -199,31 +172,24 @@ hyperlinkStyles.push(styleWrapper4)
 
 const Style5 = {}
 Style5 [BUTTON_SUBCOMPONENT] = {
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
+    height: "18px", 
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "17px", 
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style5[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style5[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "14px",
     color: "#190F14",
-    lineHeight: "16px",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    fontWeight: "400",
 }
 
 const Style5Path = {}
@@ -241,32 +207,26 @@ hyperlinkStyles.push(styleWrapper5)
 
 const Style6 = {}
 Style6 [BUTTON_SUBCOMPONENT] = {
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
+    height: "21px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomColor: "#190F14",
     borderBottomWidth: "1px",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "21px", 
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style6[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style6[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "14px",
-    lineHeight: "20px",
     color: "#190F14",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
     height: "20px",
+    fontWeight: "400",
+    lineHeight: "20px",
 }
 
 const Style6Path = {}
@@ -284,31 +244,25 @@ hyperlinkStyles.push(styleWrapper6)
 
 const Style7 = {}
 Style7 [BUTTON_SUBCOMPONENT] = {
+    
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
+    height: "18px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomWidth: "1px",
     borderBottomColor: "#ECE9E1",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "17px", 
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
 }
 Style7[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style7[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "14px",
     color: "#ECE9E1",
-    lineHeight: "16px",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT]
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
+    fontWeight: "400",
 }
 
 const Style7Path = {}
@@ -326,32 +280,26 @@ hyperlinkStyles.push(styleWrapper7)
 
 const Style8 = {}
 Style8 [BUTTON_SUBCOMPONENT] = {
+    transition: "0.2s all ease-in-out",
+    background: "transparent",
+    margin: "0px",
+    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT],
+    padding: "0px",
+    height: "21px",
     borderStyle: "none",
     borderBottomStyle: "solid",
     borderBottomWidth: "1px",
-    borderBottomColor: "#ECE9E1",
-    transition: "0.2s all ease-in-out",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "21px", 
-    background: "transparent",
-    margin: "0px",
-    ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][BUTTON_SUBCOMPONENT]
+    borderBottomColor: "#ECE9E1", 
 }
 Style8[BUTTON_SUBCOMPONENT][HOVER_BUTTON_EVENT] = {
     borderBottomColor: "RGBA(68,60,64,0.6)",
 }
 Style8[TEXT_SUBCOMPONENT] = {
-    position: "static",
-    fontFamily: "SEATBCN",
-    fontStyle: "normal",
-    fontWeight: "400",
-    fontSize: "14px",
     color: "#ECE9E1",
     ...SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT],
     height: "20px",
     lineHeight: "20px",
+    fontWeight: "400",
 }
 
 const Style8Path = {}
