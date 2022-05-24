@@ -21,7 +21,9 @@ constructor()
   
 }
 connectedCallback() {
-  
+  const WebComponent = this
+  WebComponent.style.display = 'none'
+  const construction = () => {
   const buttonOrAnchor = []
   //CREATION OF A DEFAULT BUTTON IF NOTHING IS APPENDED 
   const buttonDefault = document.createElement('button')
@@ -29,15 +31,15 @@ connectedCallback() {
   buttonDefault.appendChild(textNode)
   buttonDefault.onclick = () => {alert('Call to action')}
   buttonOrAnchor.push(buttonDefault)
-  if (this.getElementsByTagName('button').length>0) 
+  if (WebComponent.getElementsByTagName('button').length>0) 
   {
       buttonOrAnchor.pop()
-      buttonOrAnchor.push(this.getElementsByTagName('button')[0])
+      buttonOrAnchor.push(WebComponent.getElementsByTagName('button')[0])
   }
-  else if (this.getElementsByTagName('a').length>0) 
+  else if (WebComponent.getElementsByTagName('a').length>0) 
   {
       buttonOrAnchor.pop()
-      buttonOrAnchor.push(this.getElementsByTagName('a')[0])
+      buttonOrAnchor.push(WebComponent.getElementsByTagName('a')[0])
   }
   const slotContainer = document.createElement('div')
   slotContainer.style.display = 'none'
@@ -45,10 +47,10 @@ connectedCallback() {
 
   const attributes = {}
   ATTRIBUTES.forEach((ATTRIBUTE)=>{ 
-      if (this.getAttribute(ATTRIBUTE.attributeName)) attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.proccessValue(this.getAttribute(ATTRIBUTE.attributeName))
+      if (WebComponent.getAttribute(ATTRIBUTE.attributeName)) attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.proccessValue(WebComponent.getAttribute(ATTRIBUTE.attributeName))
       else attributes[ATTRIBUTE.attributeName] = ATTRIBUTE.defaultValue
                   })
-  if (!this.getAttribute(SIZE_ATTRIBUTE)) this.setAttribute(SIZE_ATTRIBUTE,attributes[SIZE_ATTRIBUTE])
+  if (!WebComponent.getAttribute(SIZE_ATTRIBUTE)) WebComponent.setAttribute(SIZE_ATTRIBUTE,attributes[SIZE_ATTRIBUTE])
   
   const keysAttributes = {...attributes}
   delete keysAttributes[CHILDREN_ATTRIBUTE];
@@ -64,10 +66,16 @@ connectedCallback() {
   const button = COMPONENTS[stylesKeys[COMPONENT_VARIANT_KEY]] (attributes)
   button.onclick = () => {buttonOrAnchor[0].click()}
  
-  this.shadow.appendChild(slotContainer)
+  WebComponent.shadow.appendChild(slotContainer)
       slotContainer.appendChild(slotSubComponent)
-  this.shadow.appendChild(button) 
-  this.style.display = 'contents'
+  WebComponent.shadow.appendChild(button) 
+  WebComponent.style.display = 'contents'
+  }
+  if (document.readyState === 'loading') {  // Loading hasn't finished yet
+    document.addEventListener('DOMContentLoaded', construction);
+  } else {  // `DOMContentLoaded` has already fired
+    construction();
+  }
 }
 }
 
