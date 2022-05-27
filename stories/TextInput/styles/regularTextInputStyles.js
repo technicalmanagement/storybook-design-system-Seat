@@ -269,7 +269,7 @@ style3Wrapper[PATH_STYLE] = Style3Path
 regularTextInputStyles.push(style3Wrapper)
 
 
-const Style4 = JSON.parse(JSON.stringify(Style2))
+const Style4 = JSON.parse(JSON.stringify(Style3))
 Style4[TITLE_SUBCOMPONENT].color = "#ECE9E1"
 Style4[TEXT_SUBCOMPONENT].color = "#FFFFFF"
 Style4[TEXT_INPUT_CONTAINER_SUBCOMPONENT].border = "1px solid #F9F8F6"

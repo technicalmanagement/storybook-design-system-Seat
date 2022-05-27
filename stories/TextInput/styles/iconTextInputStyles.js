@@ -332,7 +332,7 @@ style3Wrapper[COMPONENT_VARIANT_KEY] = ICON_TEXT_INPUT_VARIANT
 style3Wrapper[PATH_STYLE] = Style3Path
 iconTextInputStyles.push(style3Wrapper)
 
-const Style4 = JSON.parse(JSON.stringify(Style1))
+const Style4 = JSON.parse(JSON.stringify(Style3))
 Style4[TITLE_SUBCOMPONENT].color = "#ECE9E1"
 Style4[ICON_SUBCOMPONENT][ICON_COLOR_ATTRIBUTE] = "#F9F8F6"
 Style4[TEXT_SUBCOMPONENT].color = "#FFFFFF"
