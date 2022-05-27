@@ -2,6 +2,7 @@ import { SEAT_BUTTON, createSeatButton, CONTENT_TO_APPEND } from "./Button/index
 import { ICON } from "./Icons/index.js";
 import {SEAT_ACCORDION, createSeatAccordion} from "./Accordion/index.js"
 import {SEAT_TEXT_INPUT, createSeatTextInput} from "./TextInput/index.js";
+import {SEAT_TEXT_AREA, createSeatTextArea} from "./Textarea/index.js";
 import {loadFonts} from "./Fonts/index.js"
 import {SEAT_DROPDOWN, createSeatDropdown} from "./Dropdown/index.js"
 import {SEAT_RADIO_BUTTON, createSeatRadioButton} from "./RadioButton/index.js"
@@ -14,5 +15,6 @@ export {CONTENT_TO_APPEND}
 export {createSeatButton}
 export {createSeatAccordion}
 export {createSeatTextInput}
+export {createSeatTextArea}
 export {createSeatDropdown}
 export {createSeatRadioButton}
