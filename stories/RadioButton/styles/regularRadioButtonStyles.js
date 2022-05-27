@@ -256,4 +256,14 @@ style12Wrapper[STYLE_OBJECT] = {...Style12}
 style12Wrapper[COMPONENT_VARIANT_KEY] = REGULAR_RADIO_BUTTON_VARIANT
 style12Wrapper[PATH_STYLE] = Style12Path
 radioButtonStyles.push(style12Wrapper)
+
+const copyStyles = radioButtonStyles.map(el => {return JSON.parse(JSON.stringify(el))}) 
+
+copyStyles.forEach(el => {
+    el[STYLE_OBJECT][CIRCLE_FILL_SUBCOMPONENT][SVG_STYLES].transform = "scale(1)"
+    delete el[STYLE_OBJECT][CIRCLE_FILL_SUBCOMPONENT][SVG_STYLES][SELECTED_EVENT]
+   el[PATH_STYLE][STATE_ATTRIBUTE] = SELECTED_OPTION
+})
+
+radioButtonStyles.push(...copyStyles)
 export  {radioButtonStyles};
