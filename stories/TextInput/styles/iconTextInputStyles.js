@@ -252,7 +252,7 @@ Style1[ERROR_CONTAINER_SUBCOMPONENT] = {
     height: "0px", 
     fontFamily: "SEATBCN",
     fontStyle: "normal",
-    fontWeight: "bold",
+    fontWeight: "400",
     fontSize: "12px",
     lineHeight: "16px",
     backgroundColor: "transparent",
