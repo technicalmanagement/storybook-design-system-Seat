@@ -4,7 +4,8 @@ import {COLOR_ATTRIBUTE,
         SIZE_ATTRIBUTE,
         DESCRIPTOR_ON_ATTRIBUTE,
         DESCRIPTOR_ATTRIBUTE,
-        STATE_ATTRIBUTE} from './constants.js'
+        STATE_ATTRIBUTE,
+        FORM_VALUE_ATTRIBUTE} from './constants.js'
 import {DESCRIPTOR_DEFAULT,
         DESCRIPTOR_ON_OPTION,
         DESCRIPTOR_OFF_OPTION} from "./constants.js"

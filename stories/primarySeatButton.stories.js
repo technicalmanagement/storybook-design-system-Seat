@@ -58,7 +58,7 @@ argOpt[CONTENT_TO_APPEND] = {
   control: { type: 'text' },
   }
 export default {
-  title: 'Seat Components/Buttons/Buttons Primary',
+  title: 'Seat Components/Buttons',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {...argOpt}
 };

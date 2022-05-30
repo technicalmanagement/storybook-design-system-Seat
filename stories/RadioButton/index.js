@@ -44,7 +44,6 @@ export const createSeatRadioButton = (props) => {
     ATTRIBUTES.forEach((ATTRIBUTE)=> {
       if (props.hasOwnProperty(ATTRIBUTE.attributeName)) radioButtonElement.setAttribute(ATTRIBUTE.attributeName,props[ATTRIBUTE.attributeName])
     })
-    
-        
+            
     return radioButtonElement;
 }
