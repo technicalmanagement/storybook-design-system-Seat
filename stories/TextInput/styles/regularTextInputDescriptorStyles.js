@@ -44,6 +44,7 @@ Style1[CONTAINER_SLOT_WRAPPER] = {
 }
 Style1[CONTAINER_WRAPPER] = {
     margin: "0px",
+    minWidth: "456px",
     width: "260px",
     cursor: "default"
 
@@ -51,6 +52,7 @@ Style1[CONTAINER_WRAPPER] = {
 Style1[CONTAINER_SUB_WRAPPER] = {
     transition: "0.2s all ease-in-out",
     margin: "0px",
+    minWidth: "456px",
     width: "260px",
     height: "80px", 
     display: "flex",
@@ -263,6 +265,8 @@ style2Wrapper[PATH_STYLE] = Style2Path
 regularTextInputDescriptorStyles.push(style2Wrapper)
 
 const Style3 = JSON.parse(JSON.stringify(Style1))
+Style3[CONTAINER_WRAPPER].minWidth = "450px" 
+Style3[CONTAINER_SUB_WRAPPER].minWidth = "450px" 
 Style3[CONTAINER_SUB_WRAPPER].height = "76px" 
 Style3[CONTAINER_SUB_WRAPPER][ERROR_EVENT].height = "96px"
 Style3[CONTAINER_SUB_WRAPPER][INPUT_EVENT].height = "76px"

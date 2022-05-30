@@ -36,6 +36,7 @@ Style1[CONTAINER_SUB_WRAPPER] = {
     transition: "0.2s all ease-in-out",
     margin: "0px",
     width: "260px",
+    minWidth: "456px",
     minHeight: "84px", 
     height: "fit-content",
     display: "flex",
@@ -143,6 +144,7 @@ style2Wrapper[PATH_STYLE] = Style2Path
 regularTextareaStyles.push(style2Wrapper)
 
 const Style3 = JSON.parse(JSON.stringify(Style1))
+Style3[CONTAINER_SUB_WRAPPER].minWidth = "450px" 
 Style3[CONTAINER_SUB_WRAPPER].minHeight = "76px" 
 Style3[TEXT_INPUT_CONTAINER_SUBCOMPONENT].minHeight = "76px"  
 

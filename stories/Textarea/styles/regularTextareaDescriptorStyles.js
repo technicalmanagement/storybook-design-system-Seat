@@ -39,6 +39,7 @@ Style1[CONTAINER_SLOT_WRAPPER] = {
 Style1[CONTAINER_SUB_WRAPPER] = {
     transition: "0.2s all ease-in-out",
     margin: "0px",
+    minWidth: "456px",
     width: "260px",
     minHeight: "104px", 
     height: "fit-content",
@@ -168,6 +169,7 @@ style2Wrapper[PATH_STYLE] = Style2Path
 regularTextAreaDescriptorStyles.push(style2Wrapper)
 
 const Style3 = JSON.parse(JSON.stringify(Style1))
+Style3[CONTAINER_SUB_WRAPPER].minWidth = "450px" 
 Style3[CONTAINER_SUB_WRAPPER].minHeight = "96px" 
 Style3[TEXT_INPUT_CONTAINER_SUBCOMPONENT].minHeight = "76px"  
 
