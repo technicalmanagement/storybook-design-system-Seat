@@ -47,7 +47,7 @@ Style1[TITLE_SUBCOMPONENT] = {
 Style1[TEXT_TITLE_SUBCOMPONENT] = {
     position: "absolute",
     left: "0px",
-    fontFamily: "SEAT BCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "750",
     fontSize: "24px",
@@ -128,7 +128,7 @@ Style2[TITLE_SUBCOMPONENT] = {
 Style2[TEXT_TITLE_SUBCOMPONENT] = {
     position: "absolute",
     left: "0px",
-    fontFamily: "SEAT BCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "16px",
@@ -211,7 +211,7 @@ Style3[TITLE_SUBCOMPONENT] = {
 Style3[TEXT_TITLE_SUBCOMPONENT] = {
     position: "absolute",
     left: "0px",
-    fontFamily: "SEAT BCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "14px",
@@ -293,7 +293,7 @@ Style4[TITLE_SUBCOMPONENT] = {
 Style4[TEXT_TITLE_SUBCOMPONENT] = {
     position: "absolute",
     left: "0px",
-    fontFamily: "SEAT BCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "750",
     fontSize: "24px",
@@ -374,7 +374,7 @@ Style5[TITLE_SUBCOMPONENT] = {
 Style5[TEXT_TITLE_SUBCOMPONENT] = {
     position: "absolute",
     left: "0px",
-    fontFamily: "SEAT BCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "16px",
@@ -458,7 +458,7 @@ Style6[TITLE_SUBCOMPONENT] = {
 Style6[TEXT_TITLE_SUBCOMPONENT] = {
     position: "absolute",
     left: "0px",
-    fontFamily: "SEAT BCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "14px",

@@ -257,7 +257,7 @@ cursor: "default",
 }
 Style7[TEXT_SUBCOMPONENT] = {
 position: "static",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",
@@ -620,7 +620,7 @@ padding: "0px 14px",
 }
 Style17[TEXT_SUBCOMPONENT] = {
 position: "static",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",
@@ -698,7 +698,7 @@ cursor: "default",
 }
 Style19[TEXT_SUBCOMPONENT] = {
 position: "static",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",

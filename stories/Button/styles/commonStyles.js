@@ -33,7 +33,7 @@ cursor: "pointer",
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "14px 0px",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "16px",
@@ -66,7 +66,7 @@ cursor: "pointer",
 }
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "12px 0px",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",
@@ -101,7 +101,7 @@ cursor: "pointer",
 }
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "8px 0px",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",
@@ -135,7 +135,7 @@ cursor: "pointer",
 }
 SIZE_STYLES[LARGE_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "14px 0px",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "16px",
@@ -179,7 +179,7 @@ cursor: "pointer",
 SIZE_STYLES[MEDIUM_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "12px 0px",
 fontSize: "14px",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 height: "16px",
@@ -221,7 +221,7 @@ cursor: "pointer",
 SIZE_STYLES[SMALL_OPTION][REGULAR_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 padding: "8px 0px",
 fontSize: "14px",
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 height: "16px",
@@ -260,7 +260,7 @@ boxShadow: "none",
 cursor: "pointer",
 }
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "16px",
@@ -299,7 +299,7 @@ boxShadow: "none",
 cursor: "pointer",
 }
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_VARIANT][TEXT_SUBCOMPONENT] = {
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",
@@ -357,7 +357,7 @@ cursor: "pointer",
 }
 SIZE_STYLES[LARGE_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "16px",
@@ -409,7 +409,7 @@ cursor: "pointer",
 }
 SIZE_STYLES[MEDIUM_OPTION][ARROW_BUTTON_ICON_VARIANT][TEXT_SUBCOMPONENT] = {
 
-fontFamily: "SEATBCN",
+fontFamily: "SEATBCN-Regular",
 fontStyle: "normal",
 fontWeight: "bold",
 fontSize: "14px",

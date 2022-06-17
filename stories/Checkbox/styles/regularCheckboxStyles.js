@@ -180,7 +180,7 @@ Style1[MINUS_ICON_SUBCOMPONENT][ICON_HEIGHT_ATTRIBUTE]="14px"
 Style1[MINUS_ICON_SUBCOMPONENT][ICON_WIDTH_ATTRIBUTE]="12px"
 
 Style1[LABEL_SUBCOMPONENT] = {
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "16px",
@@ -205,7 +205,7 @@ Style1[ERROR_SUBCOMPONENT][SELECTED_EVENT] = {
 Style1[ERROR_LABEL] = {
     color: "#BB1A20",
     gridColumnStart: "2",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "12px",

@@ -25,7 +25,7 @@ Style1[CONTAINER_SLOT_WRAPPER] = {
 Style1[LABEL_SUBCOMPONENT] = {
     height: "100%",
     width: "100%",
-    fontFamily: "SEATBCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "16px",

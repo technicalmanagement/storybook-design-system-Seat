@@ -85,7 +85,7 @@ FONTS.push({
 })
 
 FONTS.push({
-	family: "SEATBCN",
+	family: "SEATBCN-Regular",
 	src: `url(${URL_FOLDERS_FONTS}/SEATBCN-Regular.otf)`,
 	descriptors:{weight: 400}
 })

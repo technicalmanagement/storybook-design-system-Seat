@@ -123,7 +123,7 @@ Style1[TITLE_ITEM] = {
     margin: "0px",
     border: "0px",
     height: "20px",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "16px",
@@ -134,7 +134,7 @@ Style1[TITLE_ITEM] = {
 }
 Style1[TITLE_ITEM][SELECTION_EVENT] = {
     height: "16px",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "12px",
@@ -143,7 +143,7 @@ Style1[TITLE_ITEM][SELECTION_EVENT] = {
 Style1[TITLE_ITEM][OPEN_EVENT] = {
     
     height: "20px",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "500",
     fontSize: "16px",
@@ -154,7 +154,7 @@ Style1[OPTION_SELECTED_SUBCOMPONENT] = {
     backgroundColor: "#FFFFFF",
     width: "100%",
     height: "0px",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "0px",
@@ -222,7 +222,7 @@ Style1[OPTION_Ni_SUBCOMPONENT][HOVER_EVENT] = {
 Style1[OPTION_Ni_ITEM] = {
     width: "100%",
     height: "100%",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "16px",

@@ -110,7 +110,7 @@ Style1[TITLE_SUBCOMPONENT] ={
     transition: "0.2s all ease-in-out",
     width: "100%",
     height: "100%",
-    fontFamily: "SEATBCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: "16px",
@@ -137,7 +137,7 @@ Style1[TEXT_SUBCOMPONENT] = {
     width: "calc(100%-2px)",
     backgroundColor: "transparent",
     color: "#190F14",
-    fontFamily: 'SEATBCN',
+    fontFamily: 'SEATBCN-Regular',
     fontStyle: "normal",
     fontSize: "16px",
     
@@ -192,7 +192,7 @@ Style1[DESCRIPTOR_SUBCOMPONENT] = {
     transition: "0.2s all ease-in-out",
     
     height: "16px", 
-    fontFamily: "SEATBCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "12px",
@@ -207,7 +207,7 @@ Style1[ERROR_CONTAINER_SUBCOMPONENT] = {
     transition: "0.2s all ease-in-out",
     
     height: "0px", 
-    fontFamily: "SEATBCN",
+    fontFamily: "SEATBCN-Regular",
     fontStyle: "normal",
     fontWeight: "400",
     fontSize: "12px",
