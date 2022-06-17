@@ -96,9 +96,12 @@ Style1[TITLE_PLUS_OPTION__SELECTED_SUBCOMPONENT] = {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 
 Style1[TITLE_SUBCOMPONENT] = {
+    
     transition: "0.2s all ease-in-out",
     boxSizing: "border-box",
     backgroundColor: "#FFFFFF",
@@ -117,6 +120,7 @@ Style1[TITLE_SUBCOMPONENT][OPEN_EVENT] = {
     padding: "0px 0px 0px 0px"
 }
 Style1[TITLE_ITEM] = {
+   
     boxSizing: "border-box",
     width: "100%",
     padding: "0px",
@@ -139,6 +143,8 @@ Style1[TITLE_ITEM][SELECTION_EVENT] = {
     fontWeight: "500",
     fontSize: "12px",
     lineHeight: "16px",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 Style1[TITLE_ITEM][OPEN_EVENT] = {
     
@@ -148,6 +154,8 @@ Style1[TITLE_ITEM][OPEN_EVENT] = {
     fontWeight: "500",
     fontSize: "16px",
     lineHeight: "20px",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 Style1[OPTION_SELECTED_SUBCOMPONENT] = {
     transition: "0.2s all ease-in-out",
@@ -160,6 +168,8 @@ Style1[OPTION_SELECTED_SUBCOMPONENT] = {
     fontSize: "0px",
     lineHeight: "24px",
     color: "#190F14",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 Style1[OPTION_SELECTED_SUBCOMPONENT][SELECTION_EVENT] = {
     fontSize: "16px",
@@ -228,6 +238,8 @@ Style1[OPTION_Ni_ITEM] = {
     fontSize: "16px",
     lineHeight: "24px",
     color: "#190F14",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 const Style1Path = {}
 Style1Path[COLOR_ATTRIBUTE] = BLACK_OPTION

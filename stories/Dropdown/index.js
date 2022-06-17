@@ -33,7 +33,7 @@ class SeatDropdown extends HTMLElement {
         attributes[STYLE_KEY] = stylesKeys[STYLE_KEY]
         const dropdown = COMPONENTS[stylesKeys[COMPONENT_VARIANT_KEY]] (attributes, WebComponent)
         
-        
+        this.style.display = 'contents'
         this.appendChild(dropdown)
       }
 }
