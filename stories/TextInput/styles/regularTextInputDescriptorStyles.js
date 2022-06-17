@@ -99,6 +99,8 @@ Style1[TITLE_PLUS_TEXT_CONTAINER_SUBCOMPONENT] = {
     width: "100%",
     height: "100%",
     flexDirection: "column",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 Style1[TITLE_PLUS_TEXT_CONTAINER_SUBCOMPONENT][VALIDATED_EVENT] = {
     width: "calc(100% - 32px)",
@@ -202,6 +204,8 @@ Style1[DESCRIPTOR_SUBCOMPONENT] = {
     padding: "0px 8px 0px 8px",
     width: "calc(100% - 16px)",
     paddingTop: "4px",
+    overflow: "hidden",
+whiteSpace: "nowrap",
 }
 Style1[ERROR_CONTAINER_SUBCOMPONENT] = {
     transition: "0.2s all ease-in-out",

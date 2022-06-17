@@ -119,6 +119,7 @@ if (attributes[FORM_WIDTH_ATTRIBUTE]!== "") this.styles[CONTAINER_SUB_WRAPPER].w
 
 //Component width dimensions and display
 thisComponent.style.width = this.styles[CONTAINER_SUB_WRAPPER].width
+thisComponent.style.minWidth = this.styles[CONTAINER_SUB_WRAPPER].minWidth
 thisComponent.style.display = 'block' 
 
 //Creation of all Subcomponents

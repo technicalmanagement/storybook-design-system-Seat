@@ -109,7 +109,9 @@ Style1[TITLE_PLUS_TEXT_CONTAINER_SUBCOMPONENT] = {
     width: "calc(100% - 32px)",
     height: "calc(100% - 40px)",
     flexDirection: "column",
-    padding: "20px 0px"
+    padding: "20px 0px",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
 }
 Style1[TITLE_PLUS_TEXT_CONTAINER_SUBCOMPONENT][VALIDATED_EVENT] = {
     width: "calc(100% - 56px)",

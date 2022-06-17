@@ -49,6 +49,7 @@ class SeatTI extends HTMLElement {
         attributes[STYLE_KEY] = stylesKeys[STYLE_KEY]
         const container = COMPONENTS[stylesKeys[COMPONENT_VARIANT_KEY]] (attributes, WebComponent)
         this.appendChild(container)
+        this.style.display = 'contents'
       }
 }
 if (customElements.get(NAME_OF_COMPONENT) === undefined) customElements.define(NAME_OF_COMPONENT, class extends SeatTI {});
