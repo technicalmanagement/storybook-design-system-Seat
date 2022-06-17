@@ -77,6 +77,7 @@ Style1[TITLE_PLUS_TEXT_CONTAINER_SUBCOMPONENT] = {
     width: "100%",
     height: "fit-content",
     flexDirection: "column",
+ 
 }
 
 Style1[TITLE_SUBCOMPONENT] ={
@@ -91,6 +92,8 @@ Style1[TITLE_SUBCOMPONENT] ={
     color: "#747468",
     userSelect: "none",
     paddingTop: "12px",
+    overflow: "hidden",
+whiteSpace: "nowrap",
 
 }
 Style1[TITLE_SUBCOMPONENT][INPUT_EVENT] ={
@@ -116,6 +119,7 @@ Style1[TEXT_SUBCOMPONENT] = {
     fontStyle: "normal",
     fontSize: "16px",
     resize: "none",
+    
 }
 Style1[TEXT_SUBCOMPONENT][INPUT_EVENT] ={
     height: "fit-content",
@@ -136,6 +140,8 @@ Style1[DESCRIPTOR_SUBCOMPONENT] = {
     padding: "0px 8px 0px 8px",
     width: "calc(100% - 16px)",
     paddingTop: "4px",
+    overflow: "hidden",
+whiteSpace: "nowrap",
 }
 
 const Style1Path = {}
